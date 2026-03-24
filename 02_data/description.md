@@ -1,4 +1,4 @@
-La période d'analyse court du 1er janvier 2023 au 31 décembre 2026, soit une période de 3 années.
+La période d'analyse court du 1er janvier 2023 au 31 décembre 2025, soit une période de 3 années.
 
 # 📊 Data Dictionary
 
