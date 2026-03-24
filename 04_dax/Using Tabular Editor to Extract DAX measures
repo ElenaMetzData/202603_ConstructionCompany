@@ -1,0 +1,25 @@
+var path = @"C:\Users\User\TheFreelanceWay\Cas pratiques\032026_ConstructionCompany\04_dax\Mesures_DAX.txt";
+
+var sb = new System.Text.StringBuilder();
+
+sb.AppendLine("# Liste des mesures DAX");
+sb.AppendLine("");
+
+foreach(var m in Model.AllMeasures.OrderBy(x => x.Name))
+{
+    sb.AppendLine("");
+
+    if(!string.IsNullOrEmpty("- " + m.Description))
+    {
+        sb.AppendLine("- " + m.Description);
+        sb.AppendLine("");
+    }
+
+    sb.AppendLine("```");
+    sb.AppendLine(m.Name + " =");
+    sb.AppendLine(m.Expression);
+    sb.AppendLine("```");
+    sb.AppendLine("");
+}
+
+System.IO.File.WriteAllText(path, sb.ToString());

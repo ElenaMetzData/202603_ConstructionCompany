@@ -1,0 +1,76 @@
+table Couts
+	lineageTag: 7734ed1d-be62-498f-89ae-45f8ce88cedd
+
+	column cout_id
+		dataType: string
+		lineageTag: e5dcd8db-d327-4ca1-bf46-14a2000b5cb4
+		summarizeBy: none
+		sourceColumn: cout_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column chantier_id
+		dataType: string
+		lineageTag: 1d81af61-42b2-4895-a2b8-a2dcc78f55b0
+		summarizeBy: none
+		sourceColumn: chantier_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2ea8fe96-cbfd-40ba-9026-e01434384844
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 53d6fff2-7f59-46a8-a18e-17a73a0aaa0e
+			defaultHierarchy: LocalDateTable_27c9e759-045d-4cc0-966e-ebc465906421.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column type_cout
+		dataType: string
+		lineageTag: 268e75fb-9c28-4111-86da-97527f383ac3
+		summarizeBy: none
+		sourceColumn: type_cout
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_ht
+		dataType: int64
+		formatString: 0
+		lineageTag: 73897bf5-d711-4c15-a531-962514ee8e52
+		summarizeBy: sum
+		sourceColumn: montant_ht
+
+		annotation SummarizationSetBy = Automatic
+
+	column annee_chantier
+		dataType: int64
+		formatString: 0
+		lineageTag: 9a9d0630-2a08-4426-8c90-8e743f2c0d2a
+		summarizeBy: sum
+		sourceColumn: annee_chantier
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Couts = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\User\TheFreelanceWay\Cas pratiques\202603_ConstructionCompany\02_data\dataset_pme_construction_orleans.xlsx"), null, true),
+				    Couts_Sheet = Source{[Item="Couts",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Couts_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"cout_id", type text}, {"chantier_id", type text}, {"date", type date}, {"type_cout", type text}, {"montant_ht", Int64.Type}, {"annee_chantier", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

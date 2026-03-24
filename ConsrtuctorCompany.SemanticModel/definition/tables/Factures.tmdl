@@ -1,0 +1,127 @@
+table Factures
+	lineageTag: 70b9c382-d1f6-4b30-9cd6-90e7301c8a80
+
+	column facture_id
+		dataType: string
+		lineageTag: c4ceb283-c583-42bf-8815-ed659cfd31aa
+		summarizeBy: none
+		sourceColumn: facture_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column chantier_id
+		dataType: string
+		lineageTag: 7a56bdee-0ccb-429d-b38c-c07f3b8d1ab2
+		summarizeBy: none
+		sourceColumn: chantier_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_facture
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 46197fde-fbe3-4862-ae2b-256bdae48f5a
+		summarizeBy: none
+		sourceColumn: date_facture
+
+		variation Variation
+			isDefault
+			relationship: 5658f478-a31c-4345-a431-01aba28bc732
+			defaultHierarchy: LocalDateTable_76bd10e6-15fe-4fbd-b33b-623772f629b2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column date_echeance
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d6e8fdbf-6744-4a69-b6fa-5797138c1b6d
+		summarizeBy: none
+		sourceColumn: date_echeance
+
+		variation Variation
+			isDefault
+			relationship: b554906c-a2ce-4360-b80d-bceefaa43cdf
+			defaultHierarchy: LocalDateTable_d4b4c7f7-8c40-4194-b334-2a863aae2be0.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column montant_ht
+		dataType: int64
+		formatString: 0
+		lineageTag: 58372f02-d9a7-4f7a-80c9-a76f54f04ac6
+		summarizeBy: sum
+		sourceColumn: montant_ht
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_paiement
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5a2bb7ac-04d4-46a6-9d77-93080f303ee6
+		summarizeBy: none
+		sourceColumn: date_paiement
+
+		variation Variation
+			isDefault
+			relationship: 199a7fa3-52bc-4f51-a448-2dafd43923c4
+			defaultHierarchy: LocalDateTable_42b3b8e2-a817-4733-a08f-54f5f787af77.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column est_impayee_23032026
+		dataType: int64
+		formatString: 0
+		lineageTag: f5f5e672-9b33-44e6-b26f-8e1579cc5c0f
+		summarizeBy: sum
+		sourceColumn: est_impayee_23032026
+
+		annotation SummarizationSetBy = Automatic
+
+	column est_retard_23032026
+		dataType: int64
+		formatString: 0
+		lineageTag: fb08d8c7-587f-40f6-8c41-367a12841de9
+		summarizeBy: sum
+		sourceColumn: est_retard_23032026
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_encours_23032026
+		dataType: int64
+		formatString: 0
+		lineageTag: ad56c7f4-119d-469b-a01d-86f50a6b9fb5
+		summarizeBy: sum
+		sourceColumn: montant_encours_23032026
+
+		annotation SummarizationSetBy = Automatic
+
+	column montant_retard_23032026
+		dataType: int64
+		formatString: 0
+		lineageTag: 97d6fe81-1a50-4b30-9182-41396bea0367
+		summarizeBy: sum
+		sourceColumn: montant_retard_23032026
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Factures = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\User\TheFreelanceWay\Cas pratiques\202603_ConstructionCompany\02_data\dataset_pme_construction_orleans.xlsx"), null, true),
+				    Factures_Sheet = Source{[Item="Factures",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Factures_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"facture_id", type text}, {"chantier_id", type text}, {"date_facture", type date}, {"date_echeance", type date}, {"montant_ht", Int64.Type}, {"date_paiement", type date}, {"est_impayee_23032026", Int64.Type}, {"est_retard_23032026", Int64.Type}, {"montant_encours_23032026", Int64.Type}, {"montant_retard_23032026", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

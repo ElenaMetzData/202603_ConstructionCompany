@@ -1,0 +1,98 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 420.3616394153596,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 393.18475118062986,
+            "y": 365.75
+          },
+          "nodeIndex": "Chantiers",
+          "nodeLineageTag": "42197793-b34c-4219-b18f-fe91b1b233a4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 642.36163941535983,
+            "y": 101.00988345509256
+          },
+          "nodeIndex": "Couts",
+          "nodeLineageTag": "7734ed1d-be62-498f-89ae-45f8ce88cedd",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1011.3616394153597,
+            "y": 109.2174454113279
+          },
+          "nodeIndex": "Dictionnaire",
+          "nodeLineageTag": "45032814-a6dc-4036-a383-257fda0df8e7",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 38,
+            "y": 69.75
+          },
+          "nodeIndex": "Factures",
+          "nodeLineageTag": "70b9c382-d1f6-4b30-9cd6-90e7301c8a80",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1257.3616394153596,
+            "y": 236.75
+          },
+          "nodeIndex": "Calendrier",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1503.3616394153596,
+            "y": 221.25
+          },
+          "nodeIndex": "Mesures",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,150 @@
+table Chantiers
+	lineageTag: 42197793-b34c-4219-b18f-fe91b1b233a4
+
+	column chantier_id
+		dataType: string
+		lineageTag: c34d729d-3100-4421-a268-7ed077d8d9ac
+		summarizeBy: none
+		sourceColumn: chantier_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nom_chantier
+		dataType: string
+		lineageTag: 77403ef3-b2c7-412d-8a3a-54d1931f1efb
+		summarizeBy: none
+		sourceColumn: nom_chantier
+
+		annotation SummarizationSetBy = Automatic
+
+	column client
+		dataType: string
+		lineageTag: a5e886f2-4f03-4e75-b652-d582b0bc04ce
+		summarizeBy: none
+		sourceColumn: client
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_client
+		dataType: string
+		lineageTag: 29c6991d-6722-463a-b27d-8075eb444db5
+		summarizeBy: none
+		sourceColumn: type_client
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_travaux
+		dataType: string
+		lineageTag: 16616239-cb60-4d91-8492-4cbd96d0be9b
+		summarizeBy: none
+		sourceColumn: type_travaux
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_postal
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b96aaef-c4a8-4d88-9239-b50d85fb21a8
+		summarizeBy: sum
+		sourceColumn: code_postal
+
+		annotation SummarizationSetBy = Automatic
+
+	column ville
+		dataType: string
+		lineageTag: 0b151999-d610-412f-b821-b88a77d0cab1
+		summarizeBy: none
+		sourceColumn: ville
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_debut
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 610abc89-26f5-4923-8038-9dad4de7278e
+		summarizeBy: none
+		sourceColumn: date_debut
+
+		variation Variation
+			isDefault
+			relationship: f8604aae-0fdd-4b01-a131-9cad861643e6
+			defaultHierarchy: LocalDateTable_c278d96d-b3fe-4cff-9f15-e7f3e94fbba2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column date_fin_prevue
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 89a8aef8-af58-4ddc-9e32-cb0a90a16ed4
+		summarizeBy: none
+		sourceColumn: date_fin_prevue
+
+		variation Variation
+			isDefault
+			relationship: 9f09ccad-6f41-4fd6-9c89-f0bdebd85cbb
+			defaultHierarchy: LocalDateTable_a0d7607d-9abe-4fc1-b8cd-a2c3c5132d5e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column date_fin_reelle
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b66bd14c-e7f0-44b0-ac13-708119f13ddc
+		summarizeBy: none
+		sourceColumn: date_fin_reelle
+
+		variation Variation
+			isDefault
+			relationship: 6d9c01c5-0749-4f94-97fc-38d90b9cd415
+			defaultHierarchy: LocalDateTable_89fcdb4c-72fa-45a9-8086-5938d970fd8f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ca_prevu_ht
+		dataType: int64
+		formatString: 0
+		lineageTag: b6c96da1-6c2d-4e60-bf02-3f4825b3711c
+		summarizeBy: sum
+		sourceColumn: ca_prevu_ht
+
+		annotation SummarizationSetBy = Automatic
+
+	column ca_facture_ht
+		dataType: int64
+		formatString: 0
+		lineageTag: 39ad3eb7-7624-4b84-8660-220968069227
+		summarizeBy: sum
+		sourceColumn: ca_facture_ht
+
+		annotation SummarizationSetBy = Automatic
+
+	column annee_debut
+		dataType: int64
+		formatString: 0
+		lineageTag: f9b532d4-3f63-4e3e-a747-0c0d02191beb
+		summarizeBy: sum
+		sourceColumn: annee_debut
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Chantiers = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\User\TheFreelanceWay\Cas pratiques\202603_ConstructionCompany\02_data\dataset_pme_construction_orleans.xlsx"), null, true),
+				    Chantiers_Sheet = Source{[Item="Chantiers",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Chantiers_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"chantier_id", type text}, {"nom_chantier", type text}, {"client", type text}, {"type_client", type text}, {"type_travaux", type text}, {"code_postal", Int64.Type}, {"ville", type text}, {"date_debut", type date}, {"date_fin_prevue", type date}, {"date_fin_reelle", type date}, {"ca_prevu_ht", Int64.Type}, {"ca_facture_ht", Int64.Type}, {"annee_debut", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,51 @@
+table Dictionnaire
+	lineageTag: 45032814-a6dc-4036-a383-257fda0df8e7
+
+	column Table
+		dataType: string
+		lineageTag: b815432a-3e09-4ef7-bd69-d6a95d162488
+		summarizeBy: none
+		sourceColumn: Table
+
+		annotation SummarizationSetBy = Automatic
+
+	column Colonne
+		dataType: string
+		lineageTag: e18df5b2-ac8e-4e54-8558-3429a197ada7
+		summarizeBy: none
+		sourceColumn: Colonne
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: e37f7695-16cb-430c-bc80-548d7d1e1323
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Usage principal'
+		dataType: string
+		lineageTag: 00279743-7263-49ad-bfd2-bbdaf1c63141
+		summarizeBy: none
+		sourceColumn: Usage principal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dictionnaire = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\User\TheFreelanceWay\Cas pratiques\202603_ConstructionCompany\02_data\dataset_pme_construction_orleans.xlsx"), null, true),
+				    Dictionnaire_Sheet = Source{[Item="Dictionnaire",Kind="Sheet"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Dictionnaire_Sheet,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"Table", type text}, {"Colonne", type text}, {"Description", type text}, {"Usage principal", type text}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
