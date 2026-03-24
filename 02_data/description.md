@@ -1,11 +1,4 @@
-La période d'analyse court du 1er mars 2023 au 28 février 2026, soit une période de 3 années.
-
-Les données se composent de 4 tables :
-- une table comprenant les transactions sur le compte professionnel
-- une table de fichier client 
-- une table d'historique des rendez-vous
-- une table comprenant des données de Google Analytics
-
+La période d'analyse court du 1er janvier 2023 au 31 décembre 2026, soit une période de 3 années.
 
 # 📊 Data Dictionary
 
