@@ -110,6 +110,23 @@ table Factures
 
 		annotation SummarizationSetBy = Automatic
 
+	column JoursRetard =
+			
+			VAR DateEcheance = Factures[Date_echeance]
+			VAR EstPayee = Factures[est_impayee_23032026] = 0
+			RETURN
+			IF(
+			    EstPayee || ISBLANK(DateEcheance),
+			    BLANK(),
+			    MAX(0, TODAY() - DateEcheance)
+			)
+		lineageTag: 73f17368-ca2a-4ee8-896a-a68c690ccf22
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition Factures = m
 		mode: import
 		source =

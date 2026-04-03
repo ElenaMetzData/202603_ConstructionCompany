@@ -98,6 +98,20 @@ table Calendrier
 
 		annotation SummarizationSetBy = Automatic
 
+	column StartOfMonth = DATE(YEAR('Calendrier'[Date]), MONTH('Calendrier'[Date]), 1)
+		formatString: mmmm yyyy
+		lineageTag: 153d5511-6284-49c1-9819-97d2b89ebe59
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 76f07023-b28a-45f5-8c8a-5fab62a037cc
+			defaultHierarchy: LocalDateTable_0a7a180f-84c3-4bf4-8aee-7e4452366d6e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
 	partition Calendrier = calculated
 		mode: import
 		source = ```

@@ -5,16 +5,17 @@
   "options": {
     "applyOnlyToTargetVisuals": true,
     "targetVisualNames": [
+      "a483b4cab8dd83274ab0",
+      "a18ee410cc1f45e76688",
+      "85fb60858876010cd262",
       "e5a68cfc6088071c1c9b",
+      "e09536a685f4d303109e",
+      "51154d76e70ae1fc70c9",
       "8ddb17397777ebbabfe5",
       "bc6eb381d8881acb9b0f",
       "bedf1d7addd4923606ca",
-      "51154d76e70ae1fc70c9",
-      "85fb60858876010cd262",
-      "a483b4cab8dd83274ab0",
-      "a18ee410cc1f45e76688",
-      "44be127ec1a9dd28189d",
-      "0af5d255b94ba757f55c"
+      "0af5d255b94ba757f55c",
+      "44be127ec1a9dd28189d"
     ],
     "suppressData": true
   },
@@ -24,11 +25,51 @@
     "sections": {
       "d1c2089f4990cc51d72b": {
         "visualContainers": {
+          "63c7e5a844acc38f5cde": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "13c4c370447aa8a6d973",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "CA facture ht"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "CA facture ht"
+                    }
+                  }
+                }
+              ]
+            }
+          },
           "51154d76e70ae1fc70c9": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "fcd60d62001aad87b3e4",
+                  "name": "576f5183698bbb0d5196",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -92,72 +133,17 @@
                     }
                   ],
                   "root": {
-                    "identityValues": null
+                    "identityValues": []
                   }
                 }
               ]
-            }
-          },
-          "bedf1d7addd4923606ca": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "b0cbda53b38d5e611c61",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Chantiers"
-                        }
-                      },
-                      "Property": "type_client"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Chantiers"
-                        }
-                      },
-                      "Property": "type_client"
-                    }
-                  }
-                ]
-              }
             }
           },
           "8ddb17397777ebbabfe5": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "39ca8ccada30b4c20015",
+                  "name": "d11354b638638be70442",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -212,7 +198,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "635e3f8e96f5898006da",
+                  "name": "9ef98e1fa1dd2a363874",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -288,25 +274,68 @@
                     }
                   ],
                   "root": {
-                    "identityValues": null
+                    "identityValues": []
                   }
                 }
               ]
             }
           },
-          "44be127ec1a9dd28189d": {
+          "bedf1d7addd4923606ca": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "22bc907570b691f49248",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Chantiers"
+                        }
+                      },
+                      "Property": "type_client"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
             "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Chantiers"
+                        }
+                      },
+                      "Property": "type_client"
+                    }
+                  }
+                ]
+              }
             }
           },
-          "0af5d255b94ba757f55c": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "e09536a685f4d303109e": {
+          "a18ee410cc1f45e76688": {
             "singleVisual": {
               "visualType": "actionButton",
               "objects": {}
@@ -318,19 +347,155 @@
               "objects": {}
             }
           },
-          "a18ee410cc1f45e76688": {
+          "e09536a685f4d303109e": {
             "singleVisual": {
               "visualType": "actionButton",
               "objects": {}
             }
+          },
+          "0af5d255b94ba757f55c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "44be127ec1a9dd28189d": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "c6c535692d30177df384": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "54a9d95720e257769989",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "EBE"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "EBE"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "3e385665433541d39d62": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "617d7ab342e381d68789",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "Marge Nette %"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "Marge Nette %"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f2db1b93ea90e5c72c8d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e87ff01b27f899f3c0c5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "FORMAT montant + nb factures en retards"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "FORMAT montant + nb factures en retards"
+                    }
+                  }
+                }
+              ]
+            }
           }
         },
         "visualContainerGroups": {
-          "85fb60858876010cd262": {
-            "isHidden": false
-          },
-          "e5a68cfc6088071c1c9b": {
-            "isHidden": false
+          "582df3ecc4d2c8d00dc7": {
+            "children": {
+              "85fb60858876010cd262": {
+                "isHidden": false
+              },
+              "e5a68cfc6088071c1c9b": {
+                "isHidden": false
+              }
+            }
           }
         }
       }

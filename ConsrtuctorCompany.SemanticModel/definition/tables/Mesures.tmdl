@@ -972,9 +972,343 @@ table Mesures
 			
 			
 			```
+		displayFolder: Filtres
 		lineageTag: d9f49041-da2d-4287-9774-517ebde9dcd9
 
+	/// Chiffre d'affaire ht
+	measure 'CA facture ht' = ```
+			SUM(Chantiers[ca_facture_ht]) 
+			```
+		formatString: 0
+		displayFolder: Chiffre d'affaire
+		lineageTag: f499c829-177e-4822-bc4b-b0eaf30a5cc4
+
+	measure 'Total Couts HT' =
+			
+			SUM(Couts[montant_ht])
+		formatString: 0
+		displayFolder: Couts opérationnels
+		lineageTag: 350cf170-ff7f-4b9d-94e7-3d8ffee19cc3
+
+	measure 'CA Prevu HT' = SUM( Chantiers[ca_prevu_ht] )
+		formatString: 0
+		displayFolder: Chiffre d'affaire
+		lineageTag: f40e6bfc-88e0-4973-aca9-48f80b9ca9a1
+
+	measure 'Ecart CA vs Prevu' = [CA facture ht] - [CA Prevu HT]
+		formatString: 0
+		displayFolder: Chiffre d'affaire
+		lineageTag: 57e8160f-caec-4ef7-832d-f132c9485bb3
+
+	measure 'Ecart CA % Prevu' = DIVIDE( [Ecart CA vs Prevu], [CA Prevu HT] )
+		displayFolder: Chiffre d'affaire
+		lineageTag: 743d5fa1-fbe3-4965-90e8-c54311658936
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Nb Chantiers' = COUNTROWS( Chantiers )
+		formatString: 0
+		displayFolder: Chiffre d'affaire
+		lineageTag: c97f53b2-aae5-4d5b-a225-7e67407c73d3
+
+	measure 'CA Moyen / Chantier' = DIVIDE( [CA facture ht], [Nb Chantiers] )
+		displayFolder: Chiffre d'affaire
+		lineageTag: 31a6e4cd-cdb9-4c10-9964-2786f117e664
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Couts Personnel' =
+			
+			CALCULATE(
+			  SUM( Couts[montant_ht] ),
+			  Couts[type_cout] = "Personnel"
+			)
+		formatString: 0
+		displayFolder: Couts opérationnels
+		lineageTag: 868edac6-583e-452a-a938-c60b10a32c9f
+
+	measure 'Couts Achats' =
+			
+			CALCULATE(
+			  SUM( Couts[montant_ht] ),
+			  Couts[type_cout] = "Achats"
+			)
+		formatString: 0
+		displayFolder: Couts opérationnels
+		lineageTag: 3b805dee-5656-4fd3-86a3-df6793373bee
+
+	measure 'Couts Charges Ext.' =
+			
+			CALCULATE(
+			  SUM( Couts[montant_ht] ),
+			  Couts[type_cout] = "Charges externes"
+			)
+		formatString: 0
+		displayFolder: Couts opérationnels
+		lineageTag: a5b03123-431a-41fc-9e51-8cd02c33c6cb
+
+	measure '% Personnel / CA' =
+			
+			DIVIDE( [Couts Personnel], [CA facture ht] )
+		displayFolder: Couts opérationnels
+		lineageTag: 39c70538-ea06-4066-8ea6-23914b7b4b64
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Resultat Net Chantier' =
+			
+			[CA Facture HT] - [Total Couts HT]
+		displayFolder: Rentabilité chantier
+		lineageTag: d1fe23fd-a687-40ec-affb-3c87d859aae3
+
+	measure 'Marge Nette %' =
+			
+			DIVIDE( [Resultat Net Chantier], [CA Facture HT] )
+		displayFolder: Rentabilité chantier
+		lineageTag: fd7bc459-5c23-414e-b3f8-4d2065914f5f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Depassement Budget' =
+			
+			[Total Couts HT] - [CA Prevu HT]
+		displayFolder: Rentabilité chantier
+		lineageTag: e351b870-ffc2-40c0-9f36-558be05f273c
+
+	measure 'CA Annuel (EBE)' =
+			
+			CALCULATE(
+			  SUM( Chantiers[ca_facture_ht] ),
+			  REMOVEFILTERS( Chantiers[ville] ),
+			  REMOVEFILTERS( Chantiers[type_client] ),
+			  REMOVEFILTERS( Chantiers[type_travaux] )
+			)
+		formatString: 0
+		displayFolder: EBE annuel
+		lineageTag: 89363d4e-df2d-4870-b933-caf6e766fb3f
+
+	measure EBE =
+			
+			[CA Annuel (EBE)] - [Couts Annuels (EBE)]
+		displayFolder: EBE annuel
+		lineageTag: 81196c5d-f07a-4f11-8c1c-596e162f37bd
+
+	measure 'Couts Annuels (EBE)' =
+			
+			CALCULATE(
+			  SUM( Couts[montant_ht] ),
+			  REMOVEFILTERS( Chantiers[ville] ),
+			  REMOVEFILTERS( Chantiers[type_client] ),
+			  REMOVEFILTERS( Chantiers[type_travaux] )
+			)
+		formatString: 0
+		displayFolder: EBE annuel
+		lineageTag: 92bdee4c-085d-49c8-a75b-b524cdbdf408
+
+	measure 'Taux EBE %' =
+			
+			DIVIDE( [EBE], [CA Annuel (EBE)] )
+		displayFolder: EBE annuel
+		lineageTag: 48c7764a-4436-42c6-b6f1-7768ddc1ff00
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'EBE Annee Prec.' =
+			
+			CALCULATE(
+			  [EBE],
+			  PREVIOUSYEAR( 'Calendrier'[Date] )
+			)
+		formatString: 0
+		displayFolder: EBE annuel
+		lineageTag: 858ee5d4-b23c-49da-980f-6cc79e140e24
+
+	measure 'Variation EBE vs N-1' =
+			
+			DIVIDE(
+			  [EBE] - [EBE Annee Prec.],
+			  [EBE Annee Prec.]
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		displayFolder: EBE annuel
+		lineageTag: 0787502f-1ddc-4c1f-abec-609cd5dccdda
+
+	measure 'Montant Facture' =
+			
+			SUM( Factures[montant_ht] )
+		formatString: 0
+		displayFolder: Trésorerie & Encaissements
+		lineageTag: 1b0a13f2-1970-4de6-8a92-75bbf13b9f13
+
+	measure 'Montant Encaisse' =
+			
+			CALCULATE(
+			  SUM( Factures[montant_ht] ),
+			  Factures[date_paiement] <> BLANK()
+			)
+		formatString: 0
+		displayFolder: Trésorerie & Encaissements
+		lineageTag: b7535766-6ea4-4a0e-9ced-cecdf0ea6f03
+
+	measure 'Ecart Facture-Encaisse' =
+			
+			[Montant Facture] - [Montant Encaisse]
+		formatString: 0
+		displayFolder: Trésorerie & Encaissements
+		lineageTag: fc79c7ab-0d43-421c-8e4f-cd5aa9ec32a6
+
+	measure 'Delai Moyen Paiement' =
+			
+			AVERAGEX(
+			  FILTER(
+			    Factures,
+			    Factures[date_paiement] <> BLANK()
+			  ),
+			  Factures[date_paiement] - Factures[date_echeance]
+			)
+		displayFolder: Trésorerie & Encaissements
+		lineageTag: 999ce824-82c5-4b88-b82b-54d4f7a2e214
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Montant En Retard' =
+			
+			CALCULATE(
+			  SUM( Factures[montant_retard_23032026] ),
+			  REMOVEFILTERS()
+			)
+		formatString: 0
+		displayFolder: Relances & Retards
+		lineageTag: f26d2f95-11c9-4883-b299-073d8319c7e0
+
+	measure 'Nb Factures En Retard' =
+			
+			CALCULATE(
+			  COUNTROWS( Factures ),
+			  Factures[est_retard_23032026] = 1,
+			  REMOVEFILTERS()
+			)
+		formatString: 0
+		displayFolder: Relances & Retards
+		lineageTag: ca2bfd18-7fdf-4148-b876-6cb04025e9f8
+
+	measure 'Jours de Retard' =
+			
+			DATEDIFF(
+			  MAX( Factures[date_echeance] ),
+			  TODAY(),
+			  DAY
+			)
+		formatString: 0
+		displayFolder: Relances & Retards
+		lineageTag: cfbeb973-a43a-4352-9468-191fb1f49336
+
+	measure '% CA En Souffrance' =
+			
+			DIVIDE(
+			  [Montant En Retard],
+			  CALCULATE( [CA Facture HT], REMOVEFILTERS() )
+			)
+		displayFolder: Relances & Retards
+		lineageTag: b567efc0-352d-48a6-9703-9098ec3cde97
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'FORMAT montant + nb factures en retards' = ```
+			
+			FORMAT([Montant En Retard], "# ##0 €") 
+			& " · " & 
+			FORMAT([Nb Factures En Retard], "0") & " fact."
+			```
+		displayFolder: Relances & Retards
+		lineageTag: 3fd0a309-55c7-4734-8a10-1323cfad549d
+
+	measure 'FORMAT montant + nb factures en retards (long)' = ```
+			
+			FORMAT([Nb Factures En Retard], "0") & " factures en retard" 
+			& " · " & 
+			FORMAT([Montant En Retard], "# ##0 €") & " non encaissés" 
+			```
+		displayFolder: Relances & Retards
+		lineageTag: 13385072-e1bf-4e25-9f86-78bb03b7e3c3
+
+	measure 'Valeur EBE Waterfall' =
+			
+			VAR etape = SELECTEDVALUE('Structure EBE'[Etape])
+			VAR ebe = [CA facture ht] - [Couts Achats] - [Couts Charges Ext.] - [Couts Personnel]
+			RETURN
+			SWITCH(etape,
+			    "CA",               [CA facture ht],
+			    "Achats",           -[Couts Achats],
+			    "Charges externes", -[Couts Charges Ext.],
+			    "Personnel",        -[Couts Personnel],
+			    "EBE",              BLANK()
+			)
+		formatString: 0
+		displayFolder: EBE annuel
+		lineageTag: 5fecfc79-225c-4538-a200-d69f87f443f1
+
+	measure 'FORMAT Part EBE' =
+			
+			VAR _pct = ROUND([Taux EBE %] * 100, 1)
+			RETURN
+			IF(
+			    ABS(_pct - ROUND(_pct, 0)) < 0.000001,
+			    FORMAT(_pct, "0"),
+			    FORMAT(_pct, "0.0")
+			) & " % du CA"
+		displayFolder: EBE annuel
+		lineageTag: 2bcf6ec4-ed80-4d98-8072-1f8c9e9e0343
+
+	measure 'Différence CA prévu et CA facturé' = [CA facture ht] - [CA Prevu HT]
+		formatString: 0
+		displayFolder: Chiffre d'affaire
+		lineageTag: 4723ff7f-30c7-4a49-b49a-d2ba5c9e4de9
+
+	measure 'Encaissements Manqués Cumulés' =
+			
+			CALCULATE(
+			    SUM( Factures[montant_retard_23032026] ),
+			    FILTER(
+			        ALL( 'Calendrier' ),
+			        'Calendrier'[Date] <= MAX( 'Calendrier'[Date] )
+			    )
+			)
+		formatString: 0
+		displayFolder: Trésorerie & Encaissements
+		lineageTag: 371a9102-ffa0-4e8b-b1ed-95c4ba0b0675
+
+	measure 'Action à mener' =
+			
+			IF(
+			    MAX( Factures[est_retard_23032026] ) <> 1,
+			    BLANK(),
+			    SWITCH(
+			        TRUE(),
+			        MAX( Factures[JoursRetard] ) < 30, "Rappel amiable",
+			        MAX( Factures[JoursRetard] ) < 60, "Relance formelle",
+			        MAX( Factures[JoursRetard] ) < 90, "Mise en demeure",
+			        "Contentieux"
+			    )
+			)
+		displayFolder: Relances & Retards
+		lineageTag: ede49c5d-4906-4b65-a4d8-50572fce24c4
+
+	measure 'Niveau Urgence' =
+			
+			SWITCH(
+			    TRUE(),
+			    MAX( Factures[JoursRetard] ) < 30, 1,
+			    MAX( Factures[JoursRetard] ) < 60, 2,
+			    MAX( Factures[JoursRetard] ) < 90, 3,
+			    4
+			)
+		formatString: 0
+		displayFolder: Relances & Retards
+		lineageTag: b97eb127-08f3-4de2-98eb-569528c8e428
+
 	column Value
+		isHidden
 		formatString: 0
 		lineageTag: 0967da8d-e855-4966-b9df-c4abd29e8b02
 		summarizeBy: sum
@@ -985,7 +1319,9 @@ table Mesures
 
 	partition Mesures = calculated
 		mode: import
-		source = { BLANK() }
+		source = Row("Value", BLANK())
 
 	annotation PBI_Id = b30450085a2749dfa553103aac4e23f9
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
 

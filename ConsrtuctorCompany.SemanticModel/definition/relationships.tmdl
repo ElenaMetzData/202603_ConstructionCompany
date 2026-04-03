@@ -1,8 +1,3 @@
-relationship f8604aae-0fdd-4b01-a131-9cad861643e6
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Chantiers.date_debut
-	toColumn: LocalDateTable_c278d96d-b3fe-4cff-9f15-e7f3e94fbba2.Date
-
 relationship 9f09ccad-6f41-4fd6-9c89-f0bdebd85cbb
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Chantiers.date_fin_prevue
@@ -45,4 +40,13 @@ relationship 35cc4f1f-6d69-4435-a46d-a7aa985f4b3c
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Calendrier.Date
 	toColumn: LocalDateTable_1acbca05-d5f8-4d87-8dee-fb49e24c6070.Date
+
+relationship 33db470f-43e1-1fee-de64-19f6ebe4c535
+	fromColumn: Chantiers.date_debut
+	toColumn: Calendrier.Date
+
+relationship 76f07023-b28a-45f5-8c8a-5fab62a037cc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendrier.StartOfMonth
+	toColumn: LocalDateTable_0a7a180f-84c3-4bf4-8aee-7e4452366d6e.Date
 

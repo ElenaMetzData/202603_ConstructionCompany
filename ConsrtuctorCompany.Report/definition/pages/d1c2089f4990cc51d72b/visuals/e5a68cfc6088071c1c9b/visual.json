@@ -2,16 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "e5a68cfc6088071c1c9b",
   "position": {
-    "x": 855.62547966231762,
-    "y": 90.376055257099,
+    "x": 0,
+    "y": 28.193693523167759,
     "z": 0,
     "height": 497.06830391404452,
     "width": 358.55717574827327,
-    "tabOrder": 5000
+    "tabOrder": 7000
   },
   "visualGroup": {
     "displayName": "Filters panel background",
     "groupMode": "ScaleMode"
   },
+  "parentGroupName": "582df3ecc4d2c8d00dc7",
   "isHidden": true
 }

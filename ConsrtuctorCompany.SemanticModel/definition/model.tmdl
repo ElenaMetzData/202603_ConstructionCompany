@@ -14,7 +14,6 @@ annotation PBI_ProTooling = ["DevMode"]
 
 ref table Chantiers
 ref table DateTableTemplate_4bbf770e-f1fa-44d4-914e-86e1438387d1
-ref table LocalDateTable_c278d96d-b3fe-4cff-9f15-e7f3e94fbba2
 ref table LocalDateTable_a0d7607d-9abe-4fc1-b8cd-a2c3c5132d5e
 ref table LocalDateTable_89fcdb4c-72fa-45a9-8086-5938d970fd8f
 ref table Couts
@@ -27,6 +26,8 @@ ref table LocalDateTable_42b3b8e2-a817-4733-a08f-54f5f787af77
 ref table Calendrier
 ref table LocalDateTable_1acbca05-d5f8-4d87-8dee-fb49e24c6070
 ref table Mesures
+ref table 'Structure EBE'
+ref table LocalDateTable_0a7a180f-84c3-4bf4-8aee-7e4452366d6e
 
 ref cultureInfo en-US
 

@@ -5,16 +5,17 @@
   "options": {
     "applyOnlyToTargetVisuals": true,
     "targetVisualNames": [
+      "e09536a685f4d303109e",
       "a18ee410cc1f45e76688",
       "a483b4cab8dd83274ab0",
-      "e5a68cfc6088071c1c9b",
       "85fb60858876010cd262",
+      "e5a68cfc6088071c1c9b",
       "51154d76e70ae1fc70c9",
-      "bedf1d7addd4923606ca",
       "8ddb17397777ebbabfe5",
       "bc6eb381d8881acb9b0f",
-      "44be127ec1a9dd28189d",
-      "0af5d255b94ba757f55c"
+      "bedf1d7addd4923606ca",
+      "0af5d255b94ba757f55c",
+      "44be127ec1a9dd28189d"
     ],
     "suppressData": true
   },
@@ -24,11 +25,51 @@
     "sections": {
       "d1c2089f4990cc51d72b": {
         "visualContainers": {
+          "63c7e5a844acc38f5cde": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d9450440823a179436f9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "CA facture ht"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "CA facture ht"
+                    }
+                  }
+                }
+              ]
+            }
+          },
           "51154d76e70ae1fc70c9": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "c38369fd8b185e0be3f6",
+                  "name": "b79ba573b938e961277d",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -92,72 +133,17 @@
                     }
                   ],
                   "root": {
-                    "identityValues": null
+                    "identityValues": []
                   }
                 }
               ]
-            }
-          },
-          "bedf1d7addd4923606ca": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "715628537d28343ef506",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Chantiers"
-                        }
-                      },
-                      "Property": "type_client"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Chantiers"
-                        }
-                      },
-                      "Property": "type_client"
-                    }
-                  }
-                ]
-              }
             }
           },
           "8ddb17397777ebbabfe5": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "9315b38b88a9966c083a",
+                  "name": "a30562e46a63bfc05def",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -212,7 +198,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "de867d3166c09a54f883",
+                  "name": "390b6503355df01e4d3d",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -288,36 +274,64 @@
                     }
                   ],
                   "root": {
-                    "identityValues": null
+                    "identityValues": []
                   }
                 }
               ]
             }
           },
-          "44be127ec1a9dd28189d": {
+          "bedf1d7addd4923606ca": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9022e28a9485f80ba803",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Chantiers"
+                        }
+                      },
+                      "Property": "type_client"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
             "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "0af5d255b94ba757f55c": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "e09536a685f4d303109e": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "a483b4cab8dd83274ab0": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Chantiers"
+                        }
+                      },
+                      "Property": "type_client"
+                    }
+                  }
+                ]
               }
             }
           },
@@ -329,14 +343,165 @@
                 "mode": "hidden"
               }
             }
+          },
+          "a483b4cab8dd83274ab0": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "e09536a685f4d303109e": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "0af5d255b94ba757f55c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "44be127ec1a9dd28189d": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "c6c535692d30177df384": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "363c289f6877efff0cab",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "EBE"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "EBE"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "3e385665433541d39d62": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "fea91514a5a63872fa47",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "Marge Nette %"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "Marge Nette %"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f2db1b93ea90e5c72c8d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2924f9e9d74327c2a30c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "FORMAT montant + nb factures en retards"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Mesures"
+                        }
+                      },
+                      "Property": "FORMAT montant + nb factures en retards"
+                    }
+                  }
+                }
+              ]
+            }
           }
         },
         "visualContainerGroups": {
-          "85fb60858876010cd262": {
-            "isHidden": true
-          },
-          "e5a68cfc6088071c1c9b": {
-            "isHidden": true
+          "582df3ecc4d2c8d00dc7": {
+            "children": {
+              "85fb60858876010cd262": {
+                "isHidden": true
+              },
+              "e5a68cfc6088071c1c9b": {
+                "isHidden": true
+              }
+            }
           }
         }
       }

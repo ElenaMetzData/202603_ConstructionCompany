@@ -65,11 +65,6 @@ table Chantiers
 		summarizeBy: none
 		sourceColumn: date_debut
 
-		variation Variation
-			isDefault
-			relationship: f8604aae-0fdd-4b01-a131-9cad861643e6
-			defaultHierarchy: LocalDateTable_c278d96d-b3fe-4cff-9f15-e7f3e94fbba2.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

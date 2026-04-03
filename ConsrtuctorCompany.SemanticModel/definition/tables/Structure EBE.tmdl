@@ -1,0 +1,39 @@
+table 'Structure EBE'
+	lineageTag: be93a7b3-b23d-4a52-a9eb-d4a32a808b5f
+
+	column Etape
+		lineageTag: 95075c47-f360-4e20-96f3-1967f3404fd8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Etape]
+		sortByColumn: Ordre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordre
+		formatString: 0
+		lineageTag: f2a8d611-3276-4c81-a4f8-fd63c0221f76
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ordre]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Structure EBE' = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Etape", STRING,
+				    "Ordre", INTEGER,
+				    {
+				        {"CA", 1},
+				        {"Achats", 2},
+				        {"Charges externes", 3},
+				        {"Personnel", 4},
+				        {"EBE", 5}
+				    }
+				)
+
+	annotation PBI_Id = 38c71b5fc15d4b079df5e7eb604b385d
+

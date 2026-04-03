@@ -680,611 +680,6 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "chantier.date_debut.date_hierarchy": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Chantiers",
-			          "VariationSource": "date_debut",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "date hierarchy debut": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date hierarchy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "debut": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "hierarchy debut": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "chantier.date_debut.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Chantiers",
-			          "VariationSource": "date_debut",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "year debut": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date debut year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "debut": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "debut year": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "date debut yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "debut yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "moment debut year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "yr debut": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period debut year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "year introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "year presentation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "year inauguration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "chantier.date_debut.quarter": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Chantiers",
-			          "VariationSource": "date_debut",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Quarter"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "quarter debut": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date debut quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "debut": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "debut quarter": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "date debut qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.846
-			          }
-			        },
-			        {
-			          "debut qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
-			          }
-			        },
-			        {
-			          "qtr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.818
-			          }
-			        },
-			        {
-			          "qtr debut": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.667
-			          }
-			        },
-			        {
-			          "moment debut quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "period debut quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "quarter introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "quarter presentation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "quarter inauguration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "chantier.date_debut.month": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Chantiers",
-			          "VariationSource": "date_debut",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "month debut": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date debut month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "debut": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "debut month": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "date debut mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "debut mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "moment debut month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "mth debut": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period debut month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "month introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "month presentation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "month inauguration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "chantier.date_debut.day": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Chantiers",
-			          "VariationSource": "date_debut",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Day"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "day debut": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date debut day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "debut": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "debut day": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "moment debut day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "period debut day": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "day introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "day presentation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "day inauguration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "introduction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "presentation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "inauguration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "day entrance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "day unveiling": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
 			    "chantier.date_fin_prevue": {
 			      "Definition": {
 			        "Binding": {
@@ -3383,6 +2778,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "ID Facture": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "NameType": "Identifier"
@@ -3923,6 +3328,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Date d'écheance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -5225,6 +4640,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "value": {
@@ -5461,9 +4879,1891 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "mesure.CA_facture_ht": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CA facture ht"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CA facture ht": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CA facturé ht": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "CA facturé": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.total_couts_HT": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Total Couts HT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total couts HT": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate cout ht": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall cout ht": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CA_prevu_HT": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CA Prevu HT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CA prevu HT": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ecart_CA_vs_prevu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ecart CA vs Prevu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ecart CA vs prevu": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ecart_CA__prevu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ecart CA % Prevu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ecart CA % prevu": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ecart ca percentage prevu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "ecart ca pct prevu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nb_chantiers": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Nb Chantiers"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nb chantiers": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CA_moyen___chantier": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CA Moyen / Chantier"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CA moyen / chantier": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CA moyen": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CA moyen chantier": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.couts_personnel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Couts Personnel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "couts personnel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cout worker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cout employee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cout person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cout workforce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cout laborer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cout staff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cout recruit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Personnel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.couts_achats": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Couts Achats"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "couts achats": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Achats": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.couts_charges_ext_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Couts Charges Ext."
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "couts charges ext.": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Charges Externes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.personnel___CA": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% Personnel / CA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% personnel / CA": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "% personnel": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "% personnel CA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "percentage personnel / ca": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "percentage personnel ca": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "percentage personnel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct personnel / ca": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "pct personnel ca": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pct personnel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "% worker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% employee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% person": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "% workforce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.resultat_net_chantier": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Resultat Net Chantier"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "resultat net chantier": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.marge_nette_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Marge Nette %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "marge nette %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "marge nette percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "marge nette pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.depassement_budget": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Depassement Budget"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "depassement budget": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "depassement account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "depassement cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "depassement finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CA_annuel_EBE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CA Annuel (EBE)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CA annuel (EBE)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CA annuel": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ebe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "EBE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ebe": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.couts_annuels_EBE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Couts Annuels (EBE)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "couts annuels (EBE)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "couts annuels": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_EBE_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux EBE %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "taux EBE %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "taux ebe percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "taux ebe pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.EBE_annee_prec_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "EBE Annee Prec."
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EBE annee prec.": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.variation_EBE_vs_N1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Variation EBE vs N-1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variation EBE vs N-1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.montant_facture": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Montant Facture"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "montant facture": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Facturée": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.montant_encaisse": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Montant Encaisse"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "montant encaisse": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ecart_factureencaisse": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Ecart Facture-Encaisse"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ecart facture-encaisse": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ecart facture encaisse": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.delai_moyen_paiement": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Delai Moyen Paiement"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delai moyen paiement": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.montant_en_retard": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Montant En Retard"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "montant en retard": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nb_factures_en_retard": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Nb Factures En Retard"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nb factures en retard": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "retard": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "en retard": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "factures en retard": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.jours_de_retard": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Jours de Retard"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jours de retard": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CA_en_souffrance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "% CA En Souffrance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% CA en souffrance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage ca en souffrance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct ca en souffrance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.FORMAT_montant__nb_factures_en_retards": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "FORMAT montant + nb factures en retards"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FORMAT montant + nb factures en retards": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Retards de paiement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.FORMAT_montant__nb_factures_en_retards_long": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "FORMAT montant + nb factures en retards (long)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FORMAT montant + nb factures en retards (long)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FORMAT montant + nb factures en retards": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.valeur_EBE_waterfall": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Valeur EBE Waterfall"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valeur EBE waterfall": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "valeur ebe cataract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "valeur ebe weir": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "valeur ebe cascade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "valeur ebe force": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.FORMAT_part_EBE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "FORMAT Part EBE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "FORMAT part EBE": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "part EBE": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "structure_EBE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Structure EBE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "structure EBE": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "structure_EBE.etape": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Structure EBE",
+			          "ConceptualProperty": "Etape"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "etape": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "structure_EBE.ordre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Structure EBE",
+			          "ConceptualProperty": "Ordre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier.start_of_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "StartOfMonth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start of month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "StartOfMonth": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "start": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "start of mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "twitch of month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "jump of month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "jerk of month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "flinch of month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "jolt of month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "twitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "jump": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "jerk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "flinch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Mois": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.start_of_month.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "VariationSource": "StartOfMonth",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start of month date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.start_of_month.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "VariationSource": "StartOfMonth",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start of month year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "start of mth year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "start of month yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "twitch of month year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jump of month year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jerk of month year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "flinch of month year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jolt of month year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "shock of month year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "fright of month year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.start_of_month.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "VariationSource": "StartOfMonth",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start of month quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "start of month qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "start of mth quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "twitch of month quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jump of month quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jerk of month quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "flinch of month quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jolt of month quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "shock of month quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "fright of month quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.start_of_month.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "VariationSource": "StartOfMonth",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start of month month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "start of mth month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "start of month mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "twitch of month month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jump of month month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jerk of month month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "flinch of month month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jolt of month month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "shock of month month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "fright of month month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.start_of_month.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "VariationSource": "StartOfMonth",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start of month day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "start of mth day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "twitch of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jump of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jerk of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "flinch of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "jolt of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "shock of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "fright of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "surprise of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "turn of month day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "mesure.différence_CA_prévu_et_CA_facturé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Différence CA prévu et CA facturé"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "différence CA prévu et CA facturé": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Écart facturé − prévu (€)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.encaissements_manqués_cumulés": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Encaissements Manqués Cumulés"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "encaissements manqués cumulés": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "facture.jours_retard": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Factures",
+			          "ConceptualProperty": "JoursRetard"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jours retard": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jour retard": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "JoursRetard": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.action_à_mener": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Action à mener"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "action à mener": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.niveau_urgence": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Niveau Urgence"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "niveau urgence": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "calendrier_date_date_hierarchy_has_calendrier_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.date.date_hierarchy"
+			          }
+			        },
+			        "calendrier.date.month": {
+			          "Target": {
+			            "Entity": "calendrier.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendrier_date_date_hierarchy_has_calendrier_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.date.date_hierarchy"
+			          }
+			        },
+			        "calendrier.date.quarter": {
+			          "Target": {
+			            "Entity": "calendrier.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
 			    "calendrier_date_date_hierarchy_has_calendrier_date_year": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendrier"
@@ -6087,7 +7387,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
+			          "ID": "date_hierarchies_have_months1"
 			        }
 			      ]
 			    },
@@ -6120,7 +7420,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
+			          "ID": "date_hierarchies_have_quarters1"
 			        }
 			      ]
 			    },
@@ -6520,171 +7820,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "chantier_date_debut_date_hierarchy_has_chantier_date_debut_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_debut.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_debut.day": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_debut.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_debut.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_debuts_have_day_debuts"
-			        }
-			      ]
-			    },
-			    "chantier_date_debut_date_hierarchy_has_chantier_date_debut_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_debut.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_debut.month": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_debut.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_debut.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_debuts_have_month_debuts"
-			        }
-			      ]
-			    },
-			    "chantier_date_debut_date_hierarchy_has_chantier_date_debut_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_debut.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_debut.quarter": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_debut.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_debut.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_debuts_have_quarter_debuts"
-			        }
-			      ]
-			    },
-			    "chantier_date_debut_date_hierarchy_has_chantier_date_debut_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_debut.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_debut.year": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_debut.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_debut.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_debuts_have_year_debuts"
-			        }
-			      ]
-			    },
-			    "chantier_date_debut_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_debut": {
-			          "Target": {
-			            "Entity": "chantier.date_debut"
-			          }
-			        },
-			        "chantier.date_debut.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_debut.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_debut"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_debut.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_debuts_have_date_hierarchy_debuts"
-			        }
-			      ]
-			    },
 			    "facture_has_chantier": {
 			      "Binding": {
 			        "ConceptualEntity": "Factures"
@@ -6777,106 +7912,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "facture_has_mesure_show_filter": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture": {
-			          "Target": {
-			            "Entity": "facture"
-			          }
-			        },
-			        "mesure.show_filter": {
-			          "Target": {
-			            "Entity": "mesure.show_filter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture"
-			            },
-			            "Object": {
-			              "Role": "mesure.show_filter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "factures_have_show_filter"
-			        }
-			      ]
-			    },
-			    "dictionnaire_has_mesure_show_filter": {
-			      "Binding": {
-			        "ConceptualEntity": "Dictionnaire"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dictionnaire": {
-			          "Target": {
-			            "Entity": "dictionnaire"
-			          }
-			        },
-			        "mesure.show_filter": {
-			          "Target": {
-			            "Entity": "mesure.show_filter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dictionnaire"
-			            },
-			            "Object": {
-			              "Role": "mesure.show_filter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dictionnaires_have_show_filter"
-			        }
-			      ]
-			    },
-			    "cout_has_mesure_show_filter": {
-			      "Binding": {
-			        "ConceptualEntity": "Couts"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cout": {
-			          "Target": {
-			            "Entity": "cout"
-			          }
-			        },
-			        "mesure.show_filter": {
-			          "Target": {
-			            "Entity": "mesure.show_filter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cout"
-			            },
-			            "Object": {
-			              "Role": "mesure.show_filter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "couts_have_show_filter"
-			        }
-			      ]
-			    },
-			    "chantier_has_mesure_show_filter": {
+			    "chantier_has_calendrier": {
 			      "Binding": {
 			        "ConceptualEntity": "Chantiers"
 			      },
@@ -6887,9 +7923,9 @@ cultureInfo en-US
 			            "Entity": "chantier"
 			          }
 			        },
-			        "mesure.show_filter": {
+			        "calendrier": {
 			          "Target": {
-			            "Entity": "mesure.show_filter"
+			            "Entity": "calendrier"
 			          }
 			        }
 			      },
@@ -6900,16 +7936,194 @@ cultureInfo en-US
 			              "Role": "chantier"
 			            },
 			            "Object": {
-			              "Role": "mesure.show_filter"
+			              "Role": "calendrier"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "chantiers_have_show_filter"
+			          "ID": "chantiers_have_calendriers"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "chantier"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_chantiers"
 			        }
 			      ]
 			    },
-			    "calendrier_has_mesure_show_filter": {
+			    "facture_has_mesure_niveau_urgence": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.niveau_urgence": {
+			          "Target": {
+			            "Entity": "mesure.niveau_urgence"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.niveau_urgence"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_niveau_urgence"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_action_à_mener": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.action_à_mener": {
+			          "Target": {
+			            "Entity": "mesure.action_à_mener"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.action_à_mener"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_action_à_mener"
+			        }
+			      ]
+			    },
+			    "facture_has_jours_retard": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "facture.jours_retard": {
+			          "Target": {
+			            "Entity": "facture.jours_retard"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "facture.jours_retard"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_jours_retards"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_encaissements_manqués_cumulés": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.encaissements_manqués_cumulés": {
+			          "Target": {
+			            "Entity": "mesure.encaissements_manqués_cumulés"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.encaissements_manqués_cumulés"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_encaissements_manqués_cumulés"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_différence_CA_prévu_et_CA_facturé": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.différence_CA_prévu_et_CA_facturé": {
+			          "Target": {
+			            "Entity": "mesure.différence_CA_prévu_et_CA_facturé"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.différence_CA_prévu_et_CA_facturé"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_différence_CA_prévu_et_CA_facturé"
+			        }
+			      ]
+			    },
+			    "calendrier_has_start_of_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendrier"
 			      },
@@ -6918,6 +8132,1557 @@ cultureInfo en-US
 			        "calendrier": {
 			          "Target": {
 			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.start_of_month": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.start_of_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_start_of_month"
+			        }
+			      ]
+			    },
+			    "structure_EBE_has_ordre": {
+			      "Binding": {
+			        "ConceptualEntity": "Structure EBE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "structure_EBE": {
+			          "Target": {
+			            "Entity": "structure_EBE"
+			          }
+			        },
+			        "structure_EBE.ordre": {
+			          "Target": {
+			            "Entity": "structure_EBE.ordre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "structure_EBE"
+			            },
+			            "Object": {
+			              "Role": "structure_EBE.ordre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "structure_EBEs_have_ordres"
+			        }
+			      ]
+			    },
+			    "structure_EBE_has_etape": {
+			      "Binding": {
+			        "ConceptualEntity": "Structure EBE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "structure_EBE": {
+			          "Target": {
+			            "Entity": "structure_EBE"
+			          }
+			        },
+			        "structure_EBE.etape": {
+			          "Target": {
+			            "Entity": "structure_EBE.etape"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "structure_EBE"
+			            },
+			            "Object": {
+			              "Role": "structure_EBE.etape"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "structure_EBEs_have_etapes"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_FORMAT_part_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.FORMAT_part_EBE": {
+			          "Target": {
+			            "Entity": "mesure.FORMAT_part_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.FORMAT_part_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_FORMAT_part_EBE"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_FORMAT_part_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.FORMAT_part_EBE": {
+			          "Target": {
+			            "Entity": "mesure.FORMAT_part_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.FORMAT_part_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_FORMAT_part_EBE"
+			        }
+			      ]
+			    },
+			    "structure_EBE_has_mesure_valeur_EBE_waterfall": {
+			      "Binding": {
+			        "ConceptualEntity": "Structure EBE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "structure_EBE": {
+			          "Target": {
+			            "Entity": "structure_EBE"
+			          }
+			        },
+			        "mesure.valeur_EBE_waterfall": {
+			          "Target": {
+			            "Entity": "mesure.valeur_EBE_waterfall"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "structure_EBE"
+			            },
+			            "Object": {
+			              "Role": "mesure.valeur_EBE_waterfall"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "structure_EBEs_have_valeur_EBE_waterfall"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_valeur_EBE_waterfall": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.valeur_EBE_waterfall": {
+			          "Target": {
+			            "Entity": "mesure.valeur_EBE_waterfall"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.valeur_EBE_waterfall"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_valeur_EBE_waterfall"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_valeur_EBE_waterfall": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.valeur_EBE_waterfall": {
+			          "Target": {
+			            "Entity": "mesure.valeur_EBE_waterfall"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.valeur_EBE_waterfall"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_valeur_EBE_waterfall"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_FORMAT_montant__nb_factures_en_retards_long": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.FORMAT_montant__nb_factures_en_retards_long": {
+			          "Target": {
+			            "Entity": "mesure.FORMAT_montant__nb_factures_en_retards_long"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.FORMAT_montant__nb_factures_en_retards_long"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_FORMAT_montant__nb_factures_en_retards_long"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_FORMAT_montant__nb_factures_en_retards": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.FORMAT_montant__nb_factures_en_retards": {
+			          "Target": {
+			            "Entity": "mesure.FORMAT_montant__nb_factures_en_retards"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.FORMAT_montant__nb_factures_en_retards"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_FORMAT_montant__nb_factures_en_retards"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_CA_en_souffrance": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.CA_en_souffrance": {
+			          "Target": {
+			            "Entity": "mesure.CA_en_souffrance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.CA_en_souffrance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have__CA_en_souffrance"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_CA_en_souffrance": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.CA_en_souffrance": {
+			          "Target": {
+			            "Entity": "mesure.CA_en_souffrance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.CA_en_souffrance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have__CA_en_souffrance"
+			        }
+			      ]
+			    },
+			    "mesure_has_jours_de_retard": {
+			      "Binding": {
+			        "ConceptualEntity": "Mesures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mesure": {
+			          "Target": {
+			            "Entity": "mesure"
+			          }
+			        },
+			        "mesure.jours_de_retard": {
+			          "Target": {
+			            "Entity": "mesure.jours_de_retard"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mesure"
+			            },
+			            "Object": {
+			              "Role": "mesure.jours_de_retard"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mesures_have_jours_de_retard"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_nb_factures_en_retard": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.nb_factures_en_retard": {
+			          "Target": {
+			            "Entity": "mesure.nb_factures_en_retard"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.nb_factures_en_retard"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_nb_factures_en_retard"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_montant_en_retard": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.montant_en_retard": {
+			          "Target": {
+			            "Entity": "mesure.montant_en_retard"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.montant_en_retard"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_montant_en_retard"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_delai_moyen_paiement": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.delai_moyen_paiement": {
+			          "Target": {
+			            "Entity": "mesure.delai_moyen_paiement"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.delai_moyen_paiement"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_delai_moyen_paiement"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_ecart_factureencaisse": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.ecart_factureencaisse": {
+			          "Target": {
+			            "Entity": "mesure.ecart_factureencaisse"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.ecart_factureencaisse"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_ecart_factureencaisse"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_montant_encaisse": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.montant_encaisse": {
+			          "Target": {
+			            "Entity": "mesure.montant_encaisse"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.montant_encaisse"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_montant_encaisse"
+			        }
+			      ]
+			    },
+			    "facture_has_mesure_montant_facture": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture": {
+			          "Target": {
+			            "Entity": "facture"
+			          }
+			        },
+			        "mesure.montant_facture": {
+			          "Target": {
+			            "Entity": "mesure.montant_facture"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture"
+			            },
+			            "Object": {
+			              "Role": "mesure.montant_facture"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "factures_have_montant_facture"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_variation_EBE_vs_N1": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.variation_EBE_vs_N1": {
+			          "Target": {
+			            "Entity": "mesure.variation_EBE_vs_N1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_EBE_vs_N1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_variation_EBE_vs_N1"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_variation_EBE_vs_N1": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.variation_EBE_vs_N1": {
+			          "Target": {
+			            "Entity": "mesure.variation_EBE_vs_N1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_EBE_vs_N1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_variation_EBE_vs_N1"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_EBE_annee_prec_": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.EBE_annee_prec_": {
+			          "Target": {
+			            "Entity": "mesure.EBE_annee_prec_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.EBE_annee_prec_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_EBE_annee_prec_"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_EBE_annee_prec_": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.EBE_annee_prec_": {
+			          "Target": {
+			            "Entity": "mesure.EBE_annee_prec_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.EBE_annee_prec_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_EBE_annee_prec_"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_taux_EBE_": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.taux_EBE_": {
+			          "Target": {
+			            "Entity": "mesure.taux_EBE_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.taux_EBE_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_taux_EBE_"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_taux_EBE_": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.taux_EBE_": {
+			          "Target": {
+			            "Entity": "mesure.taux_EBE_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.taux_EBE_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_taux_EBE_"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_couts_annuels_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.couts_annuels_EBE": {
+			          "Target": {
+			            "Entity": "mesure.couts_annuels_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.couts_annuels_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_couts_annuels_EBE"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_ebe": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.ebe": {
+			          "Target": {
+			            "Entity": "mesure.ebe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.ebe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_ebe"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_ebe": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.ebe": {
+			          "Target": {
+			            "Entity": "mesure.ebe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.ebe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_ebe"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_CA_annuel_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.CA_annuel_EBE": {
+			          "Target": {
+			            "Entity": "mesure.CA_annuel_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.CA_annuel_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_CA_annuel_EBE"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_depassement_budget": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.depassement_budget": {
+			          "Target": {
+			            "Entity": "mesure.depassement_budget"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.depassement_budget"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_depassement_budget"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_depassement_budget": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.depassement_budget": {
+			          "Target": {
+			            "Entity": "mesure.depassement_budget"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.depassement_budget"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_depassement_budget"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_marge_nette_": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.marge_nette_": {
+			          "Target": {
+			            "Entity": "mesure.marge_nette_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.marge_nette_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_marge_nette_"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_marge_nette_": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.marge_nette_": {
+			          "Target": {
+			            "Entity": "mesure.marge_nette_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.marge_nette_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_marge_nette_"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_resultat_net_chantier": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.resultat_net_chantier": {
+			          "Target": {
+			            "Entity": "mesure.resultat_net_chantier"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.resultat_net_chantier"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_resultat_net_chantier"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_resultat_net_chantier": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.resultat_net_chantier": {
+			          "Target": {
+			            "Entity": "mesure.resultat_net_chantier"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.resultat_net_chantier"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_resultat_net_chantier"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_personnel___CA": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.personnel___CA": {
+			          "Target": {
+			            "Entity": "mesure.personnel___CA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.personnel___CA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have__personnel___CA"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_personnel___CA": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.personnel___CA": {
+			          "Target": {
+			            "Entity": "mesure.personnel___CA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.personnel___CA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have__personnel___CA"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_couts_charges_ext_": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.couts_charges_ext_": {
+			          "Target": {
+			            "Entity": "mesure.couts_charges_ext_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.couts_charges_ext_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_couts_charges_ext_"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_couts_achats": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.couts_achats": {
+			          "Target": {
+			            "Entity": "mesure.couts_achats"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.couts_achats"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_couts_achats"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_couts_personnel": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.couts_personnel": {
+			          "Target": {
+			            "Entity": "mesure.couts_personnel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.couts_personnel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_couts_personnel"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_CA_moyen___chantier": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.CA_moyen___chantier": {
+			          "Target": {
+			            "Entity": "mesure.CA_moyen___chantier"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.CA_moyen___chantier"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_CA_moyen___chantier"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_nb_chantiers": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.nb_chantiers": {
+			          "Target": {
+			            "Entity": "mesure.nb_chantiers"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.nb_chantiers"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_nb_chantiers"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_ecart_CA__prevu": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.ecart_CA__prevu": {
+			          "Target": {
+			            "Entity": "mesure.ecart_CA__prevu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.ecart_CA__prevu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_ecart_CA__prevu"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_ecart_CA_vs_prevu": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.ecart_CA_vs_prevu": {
+			          "Target": {
+			            "Entity": "mesure.ecart_CA_vs_prevu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.ecart_CA_vs_prevu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_ecart_CA_vs_prevu"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_CA_prevu_HT": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.CA_prevu_HT": {
+			          "Target": {
+			            "Entity": "mesure.CA_prevu_HT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.CA_prevu_HT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_CA_prevu_HT"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_total_couts_HT": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.total_couts_HT": {
+			          "Target": {
+			            "Entity": "mesure.total_couts_HT"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.total_couts_HT"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_total_couts_HT"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_CA_facture_ht": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.CA_facture_ht": {
+			          "Target": {
+			            "Entity": "mesure.CA_facture_ht"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.CA_facture_ht"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_CA_facture_ht"
+			        }
+			      ]
+			    },
+			    "mesure_has_show_filter": {
+			      "Binding": {
+			        "ConceptualEntity": "Mesures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mesure": {
+			          "Target": {
+			            "Entity": "mesure"
 			          }
 			        },
 			        "mesure.show_filter": {
@@ -6930,7 +9695,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "calendrier"
+			              "Role": "mesure"
 			            },
 			            "Object": {
 			              "Role": "mesure.show_filter"
@@ -6938,40 +9703,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "calendriers_have_show_filter"
-			        }
-			      ]
-			    },
-			    "mesure_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "Mesures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mesure": {
-			          "Target": {
-			            "Entity": "mesure"
-			          }
-			        },
-			        "mesure.value": {
-			          "Target": {
-			            "Entity": "mesure.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mesure"
-			            },
-			            "Object": {
-			              "Role": "mesure.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mesures_have_values"
+			          "ID": "mesures_have_show_filter"
 			        }
 			      ]
 			    },
@@ -8400,72 +11132,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "calendrier_date_date_hierarchy_has_calendrier_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendrier"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendrier.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendrier.date.date_hierarchy"
-			          }
-			        },
-			        "calendrier.date.quarter": {
-			          "Target": {
-			            "Entity": "calendrier.date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendrier.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendrier.date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters1"
-			        }
-			      ]
-			    },
-			    "calendrier_date_date_hierarchy_has_calendrier_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendrier"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendrier.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendrier.date.date_hierarchy"
-			          }
-			        },
-			        "calendrier.date.month": {
-			          "Target": {
-			            "Entity": "calendrier.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendrier.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendrier.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months1"
-			        }
-			      ]
-			    },
 			    "calendrier_date_date_hierarchy_has_calendrier_date_day": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendrier"
@@ -8496,6 +11162,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "date_hierarchies_have_days1"
+			        }
+			      ]
+			    },
+			    "calendrier_start_of_month_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.start_of_month": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month"
+			          }
+			        },
+			        "calendrier.start_of_month.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.start_of_month"
+			            },
+			            "Object": {
+			              "Role": "calendrier.start_of_month.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_of_month_have_start_of_month_date_hierarchy"
+			        }
+			      ]
+			    },
+			    "calendrier_start_of_month_date_hierarchy_has_calendrier_start_of_month_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.start_of_month.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.date_hierarchy"
+			          }
+			        },
+			        "calendrier.start_of_month.year": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.start_of_month.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.start_of_month.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_of_month_date_hierarchy_have_start_of_month_year"
+			        }
+			      ]
+			    },
+			    "calendrier_start_of_month_date_hierarchy_has_calendrier_start_of_month_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.start_of_month.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.date_hierarchy"
+			          }
+			        },
+			        "calendrier.start_of_month.quarter": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.start_of_month.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.start_of_month.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_of_month_date_hierarchy_have_start_of_month_quarter"
+			        }
+			      ]
+			    },
+			    "calendrier_start_of_month_date_hierarchy_has_calendrier_start_of_month_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.start_of_month.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.date_hierarchy"
+			          }
+			        },
+			        "calendrier.start_of_month.month": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.start_of_month.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.start_of_month.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_of_month_date_hierarchy_have_start_of_month_month"
+			        }
+			      ]
+			    },
+			    "calendrier_start_of_month_date_hierarchy_has_calendrier_start_of_month_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.start_of_month.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.date_hierarchy"
+			          }
+			        },
+			        "calendrier.start_of_month.day": {
+			          "Target": {
+			            "Entity": "calendrier.start_of_month.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.start_of_month.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.start_of_month.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_of_month_date_hierarchy_have_start_of_month_day"
 			        }
 			      ]
 			    }
