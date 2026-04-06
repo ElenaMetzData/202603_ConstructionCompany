@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "7d83c35829ea2d25f9b9",
   "position": {
-    "x": 21,
-    "y": 236,
-    "z": 10000,
-    "height": 467,
-    "width": 1221,
+    "x": 28.46153846153846,
+    "y": 229.84615384615392,
+    "z": 11000,
+    "height": 462.30769230769226,
+    "width": 1225.3846153846152,
     "tabOrder": 10000
   },
   "visual": {
@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "Mesures.Valeur EBE Waterfall",
-              "nativeQueryRef": "Valeur EBE Waterfall",
+              "nativeQueryRef": "Excédent brut d'exploitation",
+              "displayName": "Excédent brut d'exploitation",
               "format": "#,0.############### \"€\";-#,0.############### \"€\";#,0.############### \"€\""
             }
           ]
@@ -224,8 +225,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.4
+                      "ColorId": 0,
+                      "Percent": -0.5
                     }
                   }
                 }
@@ -241,7 +242,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "21D"
+                  "Value": "17D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -288,6 +296,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

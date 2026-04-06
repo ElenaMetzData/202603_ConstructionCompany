@@ -3,7 +3,7 @@
   "name": "a18ee410cc1f45e76688",
   "position": {
     "x": 167.98158096699922,
-    "y": 471.2328339682943,
+    "y": 460.2769169619886,
     "z": 3000,
     "height": 40.276285495011507,
     "width": 170.928626247122,
@@ -319,6 +319,5 @@
     "drillFilterOtherVisuals": true
   },
   "parentGroupName": "582df3ecc4d2c8d00dc7",
-  "isHidden": true,
   "howCreated": "InsertVisualButton"
 }

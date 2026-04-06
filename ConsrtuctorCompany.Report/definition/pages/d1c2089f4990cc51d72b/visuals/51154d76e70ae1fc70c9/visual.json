@@ -20,16 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Chantiers"
+                      "Entity": "Calendrier"
                     }
                   },
-                  "Property": "annee_debut"
+                  "Property": "Annee"
                 }
               },
-              "queryRef": "Chantiers.annee_debut",
-              "nativeQueryRef": "Année",
-              "active": true,
-              "displayName": "Année"
+              "queryRef": "Calendrier.Annee",
+              "nativeQueryRef": "Annee",
+              "active": true
             }
           ]
         }
@@ -43,7 +42,7 @@
         "levels": [
           {
             "queryRefs": [
-              "Chantiers.annee_debut"
+              "Calendrier.Annee"
             ],
             "isCollapsed": true,
             "isPinned": true
@@ -66,7 +65,14 @@
             "selectAllCheckboxEnabled": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -94,6 +100,47 @@
                 "Literal": {
                   "Value": "1D"
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "c",
+                    "Entity": "Calendrier",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "c"
+                                }
+                              },
+                              "Property": "Annee"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'2025'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }

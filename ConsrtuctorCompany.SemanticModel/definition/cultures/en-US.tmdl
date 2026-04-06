@@ -110,6 +110,16 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Nom du chantier": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1711,16 +1721,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "Année": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4895,7 +4895,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "CA facturé ht": {
+			          "CA facturé HT": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5587,7 +5587,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Facturée": {
+			          "Trésorerie facturée": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5854,6 +5854,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "Excédent brut d'exploitation": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -6695,933 +6705,382 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "mesure.année_sélectionnée": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Année sélectionnée"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année sélectionnée": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.variation_CA": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Variation CA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variation CA": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.variation_marge_nette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Variation Marge Nette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variation marge nette": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.titre_CA": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Titre CA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titre CA": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.titre_EBE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Titre EBE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titre EBE": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.variation_EBE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Variation EBE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variation EBE": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.titre_marge_nette": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Titre Marge Nette"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titre marge nette": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.debug_marge_2025": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Debug Marge 2025"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "debug marge 2025": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "marge 2025": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.debug_marge_2024": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Debug Marge 2024"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "debug marge 2024": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "marge 2024": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.debug_marge_2023": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Debug Marge 2023"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "debug marge 2023": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "marge 2023": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.debug_var_marge": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Debug Var Marge"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "debug var marge": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "marge": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "var marge": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.show_filter_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "ShowFilter2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "show filter 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ShowFilter2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "filter 2": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ShowFilter2_headers": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "ShowFilter2 Headers"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ShowFilter2 headers": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "showfilter2 shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "showfilter2 pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "showfilter2 goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "showfilter2 slogan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "showfilter2 legend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "showfilter2 headpiece": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "showfilter2 description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "showfilter2 heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "showfilter2 title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "showfilter2 caption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "Filtres": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "calendrier_date_date_hierarchy_has_calendrier_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendrier"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendrier.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendrier.date.date_hierarchy"
-			          }
-			        },
-			        "calendrier.date.month": {
-			          "Target": {
-			            "Entity": "calendrier.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendrier.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendrier.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
-			    "calendrier_date_date_hierarchy_has_calendrier_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendrier"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendrier.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendrier.date.date_hierarchy"
-			          }
-			        },
-			        "calendrier.date.quarter": {
-			          "Target": {
-			            "Entity": "calendrier.date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendrier.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendrier.date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
-			        }
-			      ]
-			    },
-			    "calendrier_date_date_hierarchy_has_calendrier_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendrier"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendrier.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendrier.date.date_hierarchy"
-			          }
-			        },
-			        "calendrier.date.year": {
-			          "Target": {
-			            "Entity": "calendrier.date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendrier.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendrier.date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
-			        }
-			      ]
-			    },
-			    "calendrier_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendrier"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendrier.date": {
-			          "Target": {
-			            "Entity": "calendrier.date"
-			          }
-			        },
-			        "calendrier.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendrier.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendrier.date"
-			            },
-			            "Object": {
-			              "Role": "calendrier.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_paiement.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.date_hierarchy"
-			          }
-			        },
-			        "facture.date_paiement.day": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_paiement.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_paiement.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_paiements_have_day_paiements"
-			        }
-			      ]
-			    },
-			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_paiement.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.date_hierarchy"
-			          }
-			        },
-			        "facture.date_paiement.month": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_paiement.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_paiement.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_paiements_have_month_paiements"
-			        }
-			      ]
-			    },
-			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_paiement.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.date_hierarchy"
-			          }
-			        },
-			        "facture.date_paiement.quarter": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_paiement.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_paiement.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_paiements_have_quarter_paiements"
-			        }
-			      ]
-			    },
-			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_paiement.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.date_hierarchy"
-			          }
-			        },
-			        "facture.date_paiement.year": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_paiement.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_paiement.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_paiements_have_year_paiements"
-			        }
-			      ]
-			    },
-			    "facture_date_paiement_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_paiement": {
-			          "Target": {
-			            "Entity": "facture.date_paiement"
-			          }
-			        },
-			        "facture.date_paiement.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_paiement.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_paiement"
-			            },
-			            "Object": {
-			              "Role": "facture.date_paiement.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_paiements_have_date_hierarchy_paiements"
-			        }
-			      ]
-			    },
-			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_echeance.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.date_hierarchy"
-			          }
-			        },
-			        "facture.date_echeance.day": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_echeance.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_echeance.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_echeances_have_day_echeances"
-			        }
-			      ]
-			    },
-			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_echeance.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.date_hierarchy"
-			          }
-			        },
-			        "facture.date_echeance.month": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_echeance.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_echeance.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_echeances_have_month_echeances"
-			        }
-			      ]
-			    },
-			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_echeance.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.date_hierarchy"
-			          }
-			        },
-			        "facture.date_echeance.quarter": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_echeance.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_echeance.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_echeances_have_quarter_echeances"
-			        }
-			      ]
-			    },
-			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_echeance.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.date_hierarchy"
-			          }
-			        },
-			        "facture.date_echeance.year": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_echeance.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_echeance.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_echeances_have_year_echeances"
-			        }
-			      ]
-			    },
-			    "facture_date_echeance_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_echeance": {
-			          "Target": {
-			            "Entity": "facture.date_echeance"
-			          }
-			        },
-			        "facture.date_echeance.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_echeance.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_echeance"
-			            },
-			            "Object": {
-			              "Role": "facture.date_echeance.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_echeances_have_date_hierarchy_echeances"
-			        }
-			      ]
-			    },
-			    "facture_date_facture_date_hierarchy_has_facture_date_facture_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_facture.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_facture.date_hierarchy"
-			          }
-			        },
-			        "facture.date_facture.day": {
-			          "Target": {
-			            "Entity": "facture.date_facture.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_facture.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_facture.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_factures_have_day_factures"
-			        }
-			      ]
-			    },
-			    "facture_date_facture_date_hierarchy_has_facture_date_facture_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_facture.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_facture.date_hierarchy"
-			          }
-			        },
-			        "facture.date_facture.month": {
-			          "Target": {
-			            "Entity": "facture.date_facture.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_facture.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_facture.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_factures_have_month_factures"
-			        }
-			      ]
-			    },
-			    "facture_date_facture_date_hierarchy_has_facture_date_facture_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_facture.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_facture.date_hierarchy"
-			          }
-			        },
-			        "facture.date_facture.quarter": {
-			          "Target": {
-			            "Entity": "facture.date_facture.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_facture.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_facture.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_factures_have_quarter_factures"
-			        }
-			      ]
-			    },
-			    "facture_date_facture_date_hierarchy_has_facture_date_facture_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_facture.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_facture.date_hierarchy"
-			          }
-			        },
-			        "facture.date_facture.year": {
-			          "Target": {
-			            "Entity": "facture.date_facture.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_facture.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "facture.date_facture.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_factures_have_year_factures"
-			        }
-			      ]
-			    },
-			    "facture_date_facture_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Factures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "facture.date_facture": {
-			          "Target": {
-			            "Entity": "facture.date_facture"
-			          }
-			        },
-			        "facture.date_facture.date_hierarchy": {
-			          "Target": {
-			            "Entity": "facture.date_facture.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "facture.date_facture"
-			            },
-			            "Object": {
-			              "Role": "facture.date_facture.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_factures_have_date_hierarchy_factures"
-			        }
-			      ]
-			    },
-			    "cout_date_date_hierarchy_has_cout_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Couts"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cout.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cout.date.date_hierarchy"
-			          }
-			        },
-			        "cout.date.day": {
-			          "Target": {
-			            "Entity": "cout.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cout.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cout.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
-			        }
-			      ]
-			    },
-			    "cout_date_date_hierarchy_has_cout_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Couts"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cout.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cout.date.date_hierarchy"
-			          }
-			        },
-			        "cout.date.month": {
-			          "Target": {
-			            "Entity": "cout.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cout.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cout.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months1"
-			        }
-			      ]
-			    },
-			    "cout_date_date_hierarchy_has_cout_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Couts"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cout.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cout.date.date_hierarchy"
-			          }
-			        },
-			        "cout.date.quarter": {
-			          "Target": {
-			            "Entity": "cout.date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cout.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cout.date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters1"
-			        }
-			      ]
-			    },
-			    "cout_date_date_hierarchy_has_cout_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Couts"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cout.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cout.date.date_hierarchy"
-			          }
-			        },
-			        "cout.date.year": {
-			          "Target": {
-			            "Entity": "cout.date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cout.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cout.date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years1"
-			        }
-			      ]
-			    },
-			    "cout_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Couts"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cout.date": {
-			          "Target": {
-			            "Entity": "cout.date"
-			          }
-			        },
-			        "cout.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cout.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cout.date"
-			            },
-			            "Object": {
-			              "Role": "cout.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies1"
-			        }
-			      ]
-			    },
-			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_fin_reelle.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_fin_reelle.day": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_fin_reelle.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_fin_reelle.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_fin_reelles_have_day_fin_reelles"
-			        }
-			      ]
-			    },
-			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_fin_reelle.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_fin_reelle.month": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_fin_reelle.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_fin_reelle.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_fin_reelles_have_month_fin_reelles"
-			        }
-			      ]
-			    },
-			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_fin_reelle.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_fin_reelle.quarter": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_fin_reelle.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_fin_reelle.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_fin_reelles_have_quarter_fin_reelles"
-			        }
-			      ]
-			    },
-			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Chantiers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "chantier.date_fin_reelle.date_hierarchy": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
-			          }
-			        },
-			        "chantier.date_fin_reelle.year": {
-			          "Target": {
-			            "Entity": "chantier.date_fin_reelle.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "chantier.date_fin_reelle.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "chantier.date_fin_reelle.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchy_fin_reelles_have_year_fin_reelles"
-			        }
-			      ]
-			    },
 			    "chantier_date_fin_reelle_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "Chantiers"
@@ -7955,6 +7414,996 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendriers_have_chantiers"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_ShowFilter2_headers": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.ShowFilter2_headers": {
+			          "Target": {
+			            "Entity": "mesure.ShowFilter2_headers"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.ShowFilter2_headers"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_ShowFilter2_headers"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_ShowFilter2_headers": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.ShowFilter2_headers": {
+			          "Target": {
+			            "Entity": "mesure.ShowFilter2_headers"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.ShowFilter2_headers"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_ShowFilter2_headers"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_show_filter_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.show_filter_2": {
+			          "Target": {
+			            "Entity": "mesure.show_filter_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.show_filter_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_show_filter_2"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_show_filter_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.show_filter_2": {
+			          "Target": {
+			            "Entity": "mesure.show_filter_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.show_filter_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_show_filter_2"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_debug_var_marge": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.debug_var_marge": {
+			          "Target": {
+			            "Entity": "mesure.debug_var_marge"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_var_marge"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_debug_var_marge"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_debug_var_marge": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.debug_var_marge": {
+			          "Target": {
+			            "Entity": "mesure.debug_var_marge"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_var_marge"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_debug_var_marge"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_debug_var_marge": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.debug_var_marge": {
+			          "Target": {
+			            "Entity": "mesure.debug_var_marge"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_var_marge"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_debug_var_marge"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_debug_marge_2023": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.debug_marge_2023": {
+			          "Target": {
+			            "Entity": "mesure.debug_marge_2023"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_marge_2023"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_debug_marge_2023"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_debug_marge_2023": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.debug_marge_2023": {
+			          "Target": {
+			            "Entity": "mesure.debug_marge_2023"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_marge_2023"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_debug_marge_2023"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_debug_marge_2024": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.debug_marge_2024": {
+			          "Target": {
+			            "Entity": "mesure.debug_marge_2024"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_marge_2024"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_debug_marge_2024"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_debug_marge_2024": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.debug_marge_2024": {
+			          "Target": {
+			            "Entity": "mesure.debug_marge_2024"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_marge_2024"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_debug_marge_2024"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_debug_marge_2025": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.debug_marge_2025": {
+			          "Target": {
+			            "Entity": "mesure.debug_marge_2025"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_marge_2025"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_debug_marge_2025"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_debug_marge_2025": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.debug_marge_2025": {
+			          "Target": {
+			            "Entity": "mesure.debug_marge_2025"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.debug_marge_2025"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_debug_marge_2025"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_titre_marge_nette": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.titre_marge_nette": {
+			          "Target": {
+			            "Entity": "mesure.titre_marge_nette"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_marge_nette"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_titre_marge_nette"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_titre_marge_nette": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.titre_marge_nette": {
+			          "Target": {
+			            "Entity": "mesure.titre_marge_nette"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_marge_nette"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_titre_marge_nette"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_titre_marge_nette": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.titre_marge_nette": {
+			          "Target": {
+			            "Entity": "mesure.titre_marge_nette"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_marge_nette"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_titre_marge_nette"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_variation_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.variation_EBE": {
+			          "Target": {
+			            "Entity": "mesure.variation_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_variation_EBE"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_variation_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.variation_EBE": {
+			          "Target": {
+			            "Entity": "mesure.variation_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_variation_EBE"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_variation_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.variation_EBE": {
+			          "Target": {
+			            "Entity": "mesure.variation_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_variation_EBE"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_titre_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.titre_EBE": {
+			          "Target": {
+			            "Entity": "mesure.titre_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_titre_EBE"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_titre_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.titre_EBE": {
+			          "Target": {
+			            "Entity": "mesure.titre_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_titre_EBE"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_titre_EBE": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.titre_EBE": {
+			          "Target": {
+			            "Entity": "mesure.titre_EBE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_EBE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_titre_EBE"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_titre_CA": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.titre_CA": {
+			          "Target": {
+			            "Entity": "mesure.titre_CA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_CA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_titre_CA"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_titre_CA": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.titre_CA": {
+			          "Target": {
+			            "Entity": "mesure.titre_CA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.titre_CA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_titre_CA"
+			        }
+			      ]
+			    },
+			    "cout_has_mesure_variation_marge_nette": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout": {
+			          "Target": {
+			            "Entity": "cout"
+			          }
+			        },
+			        "mesure.variation_marge_nette": {
+			          "Target": {
+			            "Entity": "mesure.variation_marge_nette"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_marge_nette"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "couts_have_variation_marge_nette"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_variation_marge_nette": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.variation_marge_nette": {
+			          "Target": {
+			            "Entity": "mesure.variation_marge_nette"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_marge_nette"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_variation_marge_nette"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_variation_marge_nette": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.variation_marge_nette": {
+			          "Target": {
+			            "Entity": "mesure.variation_marge_nette"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_marge_nette"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_variation_marge_nette"
+			        }
+			      ]
+			    },
+			    "chantier_has_mesure_variation_CA": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier": {
+			          "Target": {
+			            "Entity": "chantier"
+			          }
+			        },
+			        "mesure.variation_CA": {
+			          "Target": {
+			            "Entity": "mesure.variation_CA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_CA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chantiers_have_variation_CA"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_variation_CA": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.variation_CA": {
+			          "Target": {
+			            "Entity": "mesure.variation_CA"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.variation_CA"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_variation_CA"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_année_sélectionnée": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.année_sélectionnée": {
+			          "Target": {
+			            "Entity": "mesure.année_sélectionnée"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.année_sélectionnée"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_année_sélectionnée"
 			        }
 			      ]
 			    },
@@ -9674,15 +10123,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "mesure_has_show_filter": {
+			    "chantier_has_mesure_show_filter": {
 			      "Binding": {
-			        "ConceptualEntity": "Mesures"
+			        "ConceptualEntity": "Chantiers"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "mesure": {
+			        "chantier": {
 			          "Target": {
-			            "Entity": "mesure"
+			            "Entity": "chantier"
 			          }
 			        },
 			        "mesure.show_filter": {
@@ -9695,7 +10144,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "mesure"
+			              "Role": "chantier"
 			            },
 			            "Object": {
 			              "Role": "mesure.show_filter"
@@ -9703,7 +10152,40 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mesures_have_show_filter"
+			          "ID": "chantiers_have_show_filter"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mesure_show_filter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "mesure.show_filter": {
+			          "Target": {
+			            "Entity": "mesure.show_filter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "mesure.show_filter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_show_filter"
 			        }
 			      ]
 			    },
@@ -11129,6 +11611,930 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "chantier_ids_are_names_IDs_of_chantiers"
+			        }
+			      ]
+			    },
+			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier.date_fin_reelle.date_hierarchy": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
+			          }
+			        },
+			        "chantier.date_fin_reelle.year": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier.date_fin_reelle.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "chantier.date_fin_reelle.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_fin_reelles_have_year_fin_reelles"
+			        }
+			      ]
+			    },
+			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier.date_fin_reelle.date_hierarchy": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
+			          }
+			        },
+			        "chantier.date_fin_reelle.quarter": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier.date_fin_reelle.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "chantier.date_fin_reelle.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_fin_reelles_have_quarter_fin_reelles"
+			        }
+			      ]
+			    },
+			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier.date_fin_reelle.date_hierarchy": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
+			          }
+			        },
+			        "chantier.date_fin_reelle.month": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier.date_fin_reelle.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "chantier.date_fin_reelle.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_fin_reelles_have_month_fin_reelles"
+			        }
+			      ]
+			    },
+			    "chantier_date_fin_reelle_date_hierarchy_has_chantier_date_fin_reelle_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Chantiers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chantier.date_fin_reelle.date_hierarchy": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.date_hierarchy"
+			          }
+			        },
+			        "chantier.date_fin_reelle.day": {
+			          "Target": {
+			            "Entity": "chantier.date_fin_reelle.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chantier.date_fin_reelle.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "chantier.date_fin_reelle.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_fin_reelles_have_day_fin_reelles"
+			        }
+			      ]
+			    },
+			    "cout_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout.date": {
+			          "Target": {
+			            "Entity": "cout.date"
+			          }
+			        },
+			        "cout.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cout.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout.date"
+			            },
+			            "Object": {
+			              "Role": "cout.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "cout_date_date_hierarchy_has_cout_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cout.date.date_hierarchy"
+			          }
+			        },
+			        "cout.date.year": {
+			          "Target": {
+			            "Entity": "cout.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cout.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "cout_date_date_hierarchy_has_cout_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cout.date.date_hierarchy"
+			          }
+			        },
+			        "cout.date.quarter": {
+			          "Target": {
+			            "Entity": "cout.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cout.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "cout_date_date_hierarchy_has_cout_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cout.date.date_hierarchy"
+			          }
+			        },
+			        "cout.date.month": {
+			          "Target": {
+			            "Entity": "cout.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cout.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "cout_date_date_hierarchy_has_cout_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Couts"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cout.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cout.date.date_hierarchy"
+			          }
+			        },
+			        "cout.date.day": {
+			          "Target": {
+			            "Entity": "cout.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cout.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cout.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "facture_date_facture_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_facture": {
+			          "Target": {
+			            "Entity": "facture.date_facture"
+			          }
+			        },
+			        "facture.date_facture.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_facture.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_facture"
+			            },
+			            "Object": {
+			              "Role": "facture.date_facture.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_factures_have_date_hierarchy_factures"
+			        }
+			      ]
+			    },
+			    "facture_date_facture_date_hierarchy_has_facture_date_facture_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_facture.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_facture.date_hierarchy"
+			          }
+			        },
+			        "facture.date_facture.year": {
+			          "Target": {
+			            "Entity": "facture.date_facture.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_facture.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_facture.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_factures_have_year_factures"
+			        }
+			      ]
+			    },
+			    "facture_date_facture_date_hierarchy_has_facture_date_facture_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_facture.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_facture.date_hierarchy"
+			          }
+			        },
+			        "facture.date_facture.quarter": {
+			          "Target": {
+			            "Entity": "facture.date_facture.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_facture.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_facture.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_factures_have_quarter_factures"
+			        }
+			      ]
+			    },
+			    "facture_date_facture_date_hierarchy_has_facture_date_facture_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_facture.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_facture.date_hierarchy"
+			          }
+			        },
+			        "facture.date_facture.month": {
+			          "Target": {
+			            "Entity": "facture.date_facture.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_facture.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_facture.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_factures_have_month_factures"
+			        }
+			      ]
+			    },
+			    "facture_date_facture_date_hierarchy_has_facture_date_facture_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_facture.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_facture.date_hierarchy"
+			          }
+			        },
+			        "facture.date_facture.day": {
+			          "Target": {
+			            "Entity": "facture.date_facture.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_facture.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_facture.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_factures_have_day_factures"
+			        }
+			      ]
+			    },
+			    "facture_date_echeance_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_echeance": {
+			          "Target": {
+			            "Entity": "facture.date_echeance"
+			          }
+			        },
+			        "facture.date_echeance.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_echeance"
+			            },
+			            "Object": {
+			              "Role": "facture.date_echeance.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_echeances_have_date_hierarchy_echeances"
+			        }
+			      ]
+			    },
+			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_echeance.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.date_hierarchy"
+			          }
+			        },
+			        "facture.date_echeance.year": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_echeance.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_echeance.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_echeances_have_year_echeances"
+			        }
+			      ]
+			    },
+			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_echeance.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.date_hierarchy"
+			          }
+			        },
+			        "facture.date_echeance.quarter": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_echeance.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_echeance.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_echeances_have_quarter_echeances"
+			        }
+			      ]
+			    },
+			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_echeance.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.date_hierarchy"
+			          }
+			        },
+			        "facture.date_echeance.month": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_echeance.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_echeance.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_echeances_have_month_echeances"
+			        }
+			      ]
+			    },
+			    "facture_date_echeance_date_hierarchy_has_facture_date_echeance_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_echeance.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.date_hierarchy"
+			          }
+			        },
+			        "facture.date_echeance.day": {
+			          "Target": {
+			            "Entity": "facture.date_echeance.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_echeance.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_echeance.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_echeances_have_day_echeances"
+			        }
+			      ]
+			    },
+			    "facture_date_paiement_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_paiement": {
+			          "Target": {
+			            "Entity": "facture.date_paiement"
+			          }
+			        },
+			        "facture.date_paiement.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_paiement"
+			            },
+			            "Object": {
+			              "Role": "facture.date_paiement.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_paiements_have_date_hierarchy_paiements"
+			        }
+			      ]
+			    },
+			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_paiement.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.date_hierarchy"
+			          }
+			        },
+			        "facture.date_paiement.year": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_paiement.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_paiement.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_paiements_have_year_paiements"
+			        }
+			      ]
+			    },
+			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_paiement.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.date_hierarchy"
+			          }
+			        },
+			        "facture.date_paiement.quarter": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_paiement.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_paiement.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_paiements_have_quarter_paiements"
+			        }
+			      ]
+			    },
+			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_paiement.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.date_hierarchy"
+			          }
+			        },
+			        "facture.date_paiement.month": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_paiement.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_paiement.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_paiements_have_month_paiements"
+			        }
+			      ]
+			    },
+			    "facture_date_paiement_date_hierarchy_has_facture_date_paiement_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Factures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "facture.date_paiement.date_hierarchy": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.date_hierarchy"
+			          }
+			        },
+			        "facture.date_paiement.day": {
+			          "Target": {
+			            "Entity": "facture.date_paiement.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "facture.date_paiement.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "facture.date_paiement.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_paiements_have_day_paiements"
+			        }
+			      ]
+			    },
+			    "calendrier_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.date": {
+			          "Target": {
+			            "Entity": "calendrier.date"
+			          }
+			        },
+			        "calendrier.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.date"
+			            },
+			            "Object": {
+			              "Role": "calendrier.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies1"
+			        }
+			      ]
+			    },
+			    "calendrier_date_date_hierarchy_has_calendrier_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.date.date_hierarchy"
+			          }
+			        },
+			        "calendrier.date.year": {
+			          "Target": {
+			            "Entity": "calendrier.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years1"
+			        }
+			      ]
+			    },
+			    "calendrier_date_date_hierarchy_has_calendrier_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.date.date_hierarchy"
+			          }
+			        },
+			        "calendrier.date.quarter": {
+			          "Target": {
+			            "Entity": "calendrier.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters1"
+			        }
+			      ]
+			    },
+			    "calendrier_date_date_hierarchy_has_calendrier_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendrier.date.date_hierarchy"
+			          }
+			        },
+			        "calendrier.date.month": {
+			          "Target": {
+			            "Entity": "calendrier.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendrier.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months1"
 			        }
 			      ]
 			    },

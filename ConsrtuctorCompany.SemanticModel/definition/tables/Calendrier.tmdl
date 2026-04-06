@@ -16,6 +16,7 @@ table Calendrier
 		annotation SummarizationSetBy = Automatic
 
 	column Annee
+		dataType: string
 		lineageTag: 3c569310-8095-4b36-abc7-e55422b86f43
 		summarizeBy: none
 		isNameInferred

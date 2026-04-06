@@ -25,6 +25,34 @@ DIVIDE( [Couts Personnel], [CA facture ht] )
 - 
 
 ```
+Action à mener =
+
+IF(
+    MAX( Factures[est_retard_23032026] ) <> 1,
+    BLANK(),
+    SWITCH(
+        TRUE(),
+        MAX( Factures[JoursRetard] ) < 30, "Rappel amiable",
+        MAX( Factures[JoursRetard] ) < 60, "Relance formelle",
+        MAX( Factures[JoursRetard] ) < 90, "Mise en demeure",
+        "Contentieux"
+    )
+)
+```
+
+
+- 
+
+```
+Année sélectionnée =
+
+SELECTEDVALUE('Calendrier'[Annee], YEAR(TODAY()))
+```
+
+
+- 
+
+```
 CA Annuel (EBE) =
 
 CALCULATE(
@@ -137,6 +165,14 @@ Depassement Budget =
 - 
 
 ```
+Différence CA prévu et CA facturé =
+[CA facture ht] - [CA Prevu HT]
+```
+
+
+- 
+
+```
 EBE =
 
 [CA Annuel (EBE)] - [Couts Annuels (EBE)]
@@ -177,6 +213,58 @@ Ecart CA vs Prevu =
 Ecart Facture-Encaisse =
 
 [Montant Facture] - [Montant Encaisse]
+```
+
+
+- 
+
+```
+Encaissements Manqués Cumulés =
+
+CALCULATE(
+    SUM( Factures[montant_retard_23032026] ),
+    FILTER(
+        ALL( 'Calendrier' ),
+        'Calendrier'[Date] <= MAX( 'Calendrier'[Date] )
+    )
+)
+```
+
+
+- 
+
+```
+FORMAT montant + nb factures en retards =
+
+FORMAT([Montant En Retard], "# ##0 €") 
+& " · " & 
+FORMAT([Nb Factures En Retard], "0") & " fact."
+```
+
+
+- 
+
+```
+FORMAT montant + nb factures en retards (long) =
+
+FORMAT([Nb Factures En Retard], "0") & " factures en retard" 
+& " · " & 
+FORMAT([Montant En Retard], "# ##0 €") & " non encaissés" 
+```
+
+
+- 
+
+```
+FORMAT Part EBE =
+
+VAR _pct = ROUND([Taux EBE %] * 100, 1)
+RETURN
+IF(
+    ABS(_pct - ROUND(_pct, 0)) < 0.000001,
+    FORMAT(_pct, "0"),
+    FORMAT(_pct, "0.0")
+) & " % du CA"
 ```
 
 
@@ -252,6 +340,21 @@ CALCULATE(
   COUNTROWS( Factures ),
   Factures[est_retard_23032026] = 1,
   REMOVEFILTERS()
+)
+```
+
+
+- 
+
+```
+Niveau Urgence =
+
+SWITCH(
+    TRUE(),
+    MAX( Factures[JoursRetard] ) < 30, 1,
+    MAX( Factures[JoursRetard] ) < 60, 2,
+    MAX( Factures[JoursRetard] ) < 90, 3,
+    4
 )
 ```
 
@@ -1253,9 +1356,115 @@ DIVIDE( [EBE], [CA Annuel (EBE)] )
 - 
 
 ```
+Titre CA =
+
+VAR _var = [Variation CA]
+VAR _annee = [Année sélectionnée]
+VAR _signe = IF(_var >= 0, "▲ +", "▼ ")
+VAR _pct = FORMAT(ABS(_var), "0,0%")
+RETURN
+IF(
+    ISBLANK(_var),
+    "Pas de comparaison disponible",
+    _signe & _pct & " vs " & (_annee - 1)
+)
+```
+
+
+- 
+
+```
+Titre EBE =
+
+VAR _var = [Variation EBE]
+VAR _annee = [Année sélectionnée]
+VAR _signe = IF(_var >= 0, "▲ +", "▼ ")
+VAR _pct = FORMAT(ABS(_var), "0,0%")
+RETURN
+IF(
+    ISBLANK(_var),
+    "Pas de comparaison disponible",
+    _signe & _pct & " vs " & (_annee - 1)
+)
+```
+
+
+- 
+
+```
+Titre Marge Nette =
+
+VAR _var   = [Variation Marge Nette]
+VAR _annee = [Année sélectionnée]
+VAR _signe = IF(_var >= 0, "▲ +", "▼ ")
+VAR _pts   = FORMAT(ABS(_var), "0,0 pp")
+RETURN
+IF(
+    ISBLANK(_var),
+    "Pas de comparaison disponible",
+    _signe & _pts & " vs " & (_annee - 1)
+)
+```
+
+
+- 
+
+```
 Total Couts HT =
 
 SUM(Couts[montant_ht])
+```
+
+
+- 
+
+```
+Valeur EBE Waterfall =
+
+VAR etape = SELECTEDVALUE('Structure EBE'[Etape])
+VAR ebe = [CA facture ht] - [Couts Achats] - [Couts Charges Ext.] - [Couts Personnel]
+RETURN
+SWITCH(etape,
+    "CA",               [CA facture ht],
+    "Achats",           -[Couts Achats],
+    "Charges externes", -[Couts Charges Ext.],
+    "Personnel",        -[Couts Personnel],
+    "EBE",              BLANK()
+)
+```
+
+
+- 
+
+```
+Variation CA =
+
+VAR _annee = MAXX(ALLSELECTED('Calendrier'[Annee]), 'Calendrier'[Annee])
+VAR _n  = CALCULATE([CA facture ht], 'Calendrier'[Annee] = _annee)
+VAR _n1 = CALCULATE([CA facture ht], 'Calendrier'[Annee] = _annee - 1)
+RETURN
+IF(
+    _n1 = 0 || ISBLANK(_n1),
+    BLANK(),
+    DIVIDE(_n - _n1, _n1)
+)
+```
+
+
+- 
+
+```
+Variation EBE =
+
+VAR _annee = [Année sélectionnée]
+VAR _n = CALCULATE([EBE], 'Calendrier'[Annee] = _annee)
+VAR _n1 = CALCULATE([EBE], 'Calendrier'[Annee] = _annee - 1)
+RETURN
+IF(
+    _n1 = 0 || ISBLANK(_n1),
+    BLANK(),
+    DIVIDE(_n - _n1, _n1)
+)
 ```
 
 
@@ -1267,6 +1476,23 @@ Variation EBE vs N-1 =
 DIVIDE(
   [EBE] - [EBE Annee Prec.],
   [EBE Annee Prec.]
+)
+```
+
+
+- 
+
+```
+Variation Marge Nette =
+
+VAR _annee = [Année sélectionnée]
+VAR _n  = CALCULATE([Marge Nette %], 'Calendrier'[Annee] = _annee)
+VAR _n1 = CALCULATE([Marge Nette %], 'Calendrier'[Annee] = _annee - 1)
+RETURN
+IF(
+    _n1 = 0 || ISBLANK(_n1),
+    BLANK(),
+    _n - _n1
 )
 ```
 

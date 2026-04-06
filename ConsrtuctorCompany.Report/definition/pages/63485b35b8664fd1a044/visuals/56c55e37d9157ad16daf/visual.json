@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "56c55e37d9157ad16daf",
   "position": {
-    "x": 34,
-    "y": 236,
-    "z": 8000,
-    "height": 467,
-    "width": 1221,
+    "x": 28.46153846153846,
+    "y": 226.15384615384619,
+    "z": 9000,
+    "height": 466,
+    "width": 1225,
     "tabOrder": 6000
   },
   "visual": {
@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "Mesures.Valeur EBE Waterfall",
-              "nativeQueryRef": "Valeur EBE Waterfall",
+              "nativeQueryRef": "Excédent Brut d'exploitation",
+              "displayName": "Excédent Brut d'exploitation",
               "format": "#,0.############### \"€\";-#,0.############### \"€\";#,0.############### \"€\""
             }
           ]
@@ -224,8 +225,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.4
+                      "ColorId": 0,
+                      "Percent": -0.5
                     }
                   }
                 }
@@ -241,7 +242,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "21D"
+                  "Value": "17D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -288,6 +296,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

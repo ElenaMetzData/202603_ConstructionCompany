@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "e1bac305ab0c705991d9",
   "position": {
-    "x": 24,
-    "y": 63,
-    "z": 13000,
-    "height": 153,
-    "width": 393,
+    "x": 28.214285714285715,
+    "y": 56.785714285714292,
+    "z": 14000,
+    "height": 152.85714285714286,
+    "width": 385.71428571428572,
     "tabOrder": 13000
   },
   "visual": {
@@ -150,7 +150,7 @@
             "roundEdge": {
               "expr": {
                 "Literal": {
-                  "Value": "14L"
+                  "Value": "11L"
                 }
               }
             }

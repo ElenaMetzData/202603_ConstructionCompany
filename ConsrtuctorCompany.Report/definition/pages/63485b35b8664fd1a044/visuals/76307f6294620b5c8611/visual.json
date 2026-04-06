@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "76307f6294620b5c8611",
   "position": {
-    "x": 458,
-    "y": 66,
-    "z": 6000,
-    "height": 138,
-    "width": 377,
+    "x": 457.75987000281884,
+    "y": 65.879387819396783,
+    "z": 7000,
+    "height": 137.87129615811904,
+    "width": 367.43040010612015,
     "tabOrder": 7000
   },
   "visual": {
@@ -120,7 +120,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "17D"
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -638,6 +645,20 @@
           "selector": {
             "metadata": "Mesures.EBE"
           }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
         }
       ],
       "divider": [
@@ -687,10 +708,24 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.4
+                      "ColorId": 0,
+                      "Percent": -0.5
                     }
                   }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }

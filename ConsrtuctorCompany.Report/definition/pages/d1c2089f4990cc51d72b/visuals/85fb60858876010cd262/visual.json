@@ -3,7 +3,7 @@
   "name": "85fb60858876010cd262",
   "position": {
     "x": 22.594013814274831,
-    "y": 113.65800664672878,
+    "y": 102.70208964042313,
     "z": 1000,
     "height": 346.76899462778204,
     "width": 246.56945510360703,
@@ -13,6 +13,5 @@
     "displayName": "Slicers",
     "groupMode": "ScaleMode"
   },
-  "parentGroupName": "582df3ecc4d2c8d00dc7",
-  "isHidden": true
+  "parentGroupName": "582df3ecc4d2c8d00dc7"
 }

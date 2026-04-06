@@ -3,7 +3,7 @@
   "name": "e5a68cfc6088071c1c9b",
   "position": {
     "x": 0,
-    "y": 28.193693523167759,
+    "y": 17.2377765168621,
     "z": 0,
     "height": 497.06830391404452,
     "width": 358.55717574827327,
@@ -13,6 +13,5 @@
     "displayName": "Filters panel background",
     "groupMode": "ScaleMode"
   },
-  "parentGroupName": "582df3ecc4d2c8d00dc7",
-  "isHidden": true
+  "parentGroupName": "582df3ecc4d2c8d00dc7"
 }

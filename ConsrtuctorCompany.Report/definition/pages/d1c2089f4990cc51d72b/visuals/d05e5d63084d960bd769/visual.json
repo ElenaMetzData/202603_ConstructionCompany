@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "d05e5d63084d960bd769",
   "position": {
-    "x": 514.44444444444446,
-    "y": 470,
-    "z": 13750,
-    "height": 27.777777777777779,
-    "width": 113.33333333333333,
-    "tabOrder": 10000
+    "x": 542.82271130285983,
+    "y": 463.78533850326761,
+    "z": 16000,
+    "height": 20.877796588571531,
+    "width": 85.748093131633084,
+    "tabOrder": 11000
   },
   "visualGroup": {
     "displayName": "TOP/FLOP",

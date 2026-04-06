@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "fda4df3e738d639dfab7",
   "position": {
-    "x": 880,
-    "y": 66,
-    "z": 7000,
-    "height": 138,
-    "width": 375,
+    "x": 880.20295478286823,
+    "y": 65.879387819396783,
+    "z": 8000,
+    "height": 137.87129615811904,
+    "width": 366.75123115952846,
     "tabOrder": 8000
   },
   "visual": {
@@ -83,6 +83,13 @@
                   "Value": "0L"
                 }
               }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
             }
           },
           "selector": {
@@ -120,7 +127,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "17D"
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -575,6 +589,13 @@
                   "Value": "'Cards'"
                 }
               }
+            },
+            "rowCount": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
             }
           }
         }
@@ -637,6 +658,20 @@
           },
           "selector": {
             "metadata": "Mesures.EBE"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -703,10 +738,24 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.4
+                      "ColorId": 0,
+                      "Percent": -0.5
                     }
                   }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
